@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "1c6edbbb4e28daa5",
+    "type": "split",
+    "children": [
+      {
+        "id": "49389f263ca75cb6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c86f99061e6db6c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "robledo/historia-ing-software.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "historia-ing-software"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c147f777d95f4f43",
+    "type": "split",
+    "children": [
+      {
+        "id": "b1e2ee16c080d3eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a2c608163f2d9893",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "012a2a71ff374dfc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "da0bce87cc5d7542",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c42e506aca7de907",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ea14c0b60e371d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "36fd10b8e0fce8b4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "robledo/historia-ing-software.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for historia-ing-software"
+            }
+          },
+          {
+            "id": "68daa50b199fa2fc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "robledo/historia-ing-software.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from historia-ing-software"
+            }
+          },
+          {
+            "id": "f4600b458183d7cd",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9709780b7221dd0c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "robledo/historia-ing-software.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of historia-ing-software"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "c86f99061e6db6c0",
+  "lastOpenFiles": [
+    "documentacion/_5_IngSoftware_CV.pdf",
+    "robledo/historia-ing-software.md",
+    "robledo/clasificacion-software.md",
+    "documentacion/_4_SoftwareClasif.pdf",
+    "README.md"
+  ]
+}
