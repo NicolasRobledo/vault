@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cad9f1dd98920e74",
+            "id": "eac2b841e9fa4c95",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sin título.md",
+                "file": "SIST2/Crisis del Software.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sin título"
+              "title": "Crisis del Software"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "020c39e14f87a964",
@@ -167,8 +166,28 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "cad9f1dd98920e74",
+  "active": "e72702b0048ab6a2",
   "lastOpenFiles": [
-    "Sin título.md"
+    "SIST2/Ingeniería de Software.md",
+    "Ingeniería en Software.md",
+    "SIST2/Crisis del Software.md",
+    "SIST2/Imagenes/Pasted image 20250914174014.png",
+    "SIST2/Imagenes/Pasted image 20250914172724.png",
+    "SIST2/Imagenes/Pasted image 20250914172452.png",
+    "SIST2/Conceptos Basicos/Software.md",
+    "SIST2/Tipos de Software/Software Por Lotes.md",
+    "SIST2/Conceptos Basicos",
+    "SIST2/Imagenes/Pasted image 20250914171023.png",
+    "SIST2/Tipos de Software",
+    "SIST2/Tipos de Software/Software de Sistemas.md",
+    "SIST2/Imagenes",
+    "SIST2/Clasificación del Software.md",
+    "SIST2/Tipos de Software/Software En Tiempo Real.md",
+    "SIST2/Tipos de Software/Software en Linea.md",
+    "SIST2/Tipos de Software/Software de IA.md",
+    "SIST2/Tipos de Software/Software de Utilitarios.md",
+    "SIST2/Tipos de Software/Software Empotrado.md",
+    "SIST2/Tipos de Software/Software Científico.md",
+    "SIST2/Tipos de Software/Software de Gestión.md"
   ]
 }

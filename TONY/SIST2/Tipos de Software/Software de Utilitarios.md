@@ -1,0 +1,5 @@
+Destinados, en general, a tareas de
+ofimática, o de apoyo a actividades
+de diseño de nuevos instrumentos.
+Por ejemplo MS Office, Libre Office,
+AutoCad, Draw, etc.

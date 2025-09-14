@@ -1,0 +1,5 @@
+Sistemas expertos, para apoyo de
+tareas de un conocimiento
+específico, mediante la aplicación de
+diversas técnicas de asimilación de
+aprendizaje.
