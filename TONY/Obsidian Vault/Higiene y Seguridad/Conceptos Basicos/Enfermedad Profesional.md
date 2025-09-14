@@ -1,0 +1,3 @@
+Si la enfermedad no se encuentra en el Listado y se sospecha que es producida por el trabajo, hay que realizar la denuncia ante la Aseguradora de Riesgos del
+Trabajo .
+Si la ART rechaza la denuncia o deriva al trabajador a la obra social, por considerar que la enfermedad no fue causada por el trabajo, será una Comisión Médica (CM) y la Comisión Médica Central (CMC) las que definirán si se reconoce la enfermedad profesional en ese caso.
