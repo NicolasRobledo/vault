@@ -1,6 +1,3 @@
-Perfecto 🙌 Lo que compartiste son **apuntes de clase muy esquemáticos**. Te armo una **versión en lenguaje natural, desarrollada y complementada**, como si fuera un resumen narrado para *Sistemas II* en Ingeniería del Software.
-
----
 
 # 📖 Introducción a la Ingeniería del Software
 
