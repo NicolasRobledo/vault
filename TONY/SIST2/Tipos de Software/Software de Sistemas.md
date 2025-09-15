@@ -1,3 +1,1 @@
-Llamados “Sistemas de Base”, como
-Sistemas Operativos, Base de Datos,
-etc.
+Llamados “Sistemas de Base”, como Sistemas Operativos, Base de Datos, etc.

@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "cc8deef180f06e9e",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed073f67d9ca7abf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d96c4a6bce9c702e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Conceptos Basicos/Software.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Software"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8c5f9522c221d8a4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c82f4a43eed3f403",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "557e29083c23cf52",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "f99c245df3132912",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "6dea630514fe3080",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a7134be73e4de721",
+    "type": "split",
+    "children": [
+      {
+        "id": "50e6f006e4c732b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "81c00dada772d694",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Tipos de Software/Software de Sistemas.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Software de Sistemas"
+            }
+          },
+          {
+            "id": "eceb44288bed6dd3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Conceptos Basicos/Software.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Software"
+            }
+          },
+          {
+            "id": "6402574092145874",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "2895225155323c60",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Tipos de Software/Software de Sistemas.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Software de Sistemas"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "d96c4a6bce9c702e",
+  "lastOpenFiles": [
+    "Proceso Software frente a Ciclo de Vida.md",
+    "Conceptos Basicos/Software.md",
+    "Ingeniería de Software.md",
+    "Crisis del Software.md",
+    "Imagenes/Pasted image 20250914172724.png",
+    "Clasificación del Software.md",
+    "Tipos de Software/Hambito de Aplicación.md",
+    "Momento de Registro.md",
+    "Tipos de Software/Software Por Lotes.md",
+    "Tipos de Software/Software En Tiempo Real.md",
+    "Tipos de Software/Software en Linea.md",
+    "Tipos de Software/Software de IA.md",
+    "Tipos de Software/Software de Utilitarios.md",
+    "Tipos de Software/Software Empotrado.md",
+    "Tipos de Software/Software Científico.md",
+    "Tipos de Software/Software de Gestión.md",
+    "Tipos de Software/Software de Sistemas.md",
+    "Clasificacion del software.md",
+    "APUNTE MODELO - - - - - - - - -.md"
+  ]
+}

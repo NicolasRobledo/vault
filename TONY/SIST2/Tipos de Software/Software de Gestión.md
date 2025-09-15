@@ -1,5 +1,1 @@
-Destinados a apoyo de las
-actividades cotidianas de una
-organización. Como por ejemplo,
-sistemas de Facturación, de Atención
-al Cliente, de Ventas, etc.
+Destinados a apoyo de las actividades cotidianas de una organización. Como por ejemplo, sistemas de Facturación, de Atención al Cliente, de Ventas, etc.

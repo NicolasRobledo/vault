@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c9c50d7217d766a5",
+        "id": "cca18047b8a5e9a6",
         "type": "tabs",
         "children": [
           {
-            "id": "eac2b841e9fa4c95",
+            "id": "0442f9306e0c9850",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SIST2/Crisis del Software.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Crisis del Software"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -166,11 +162,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "e72702b0048ab6a2",
+  "active": "0442f9306e0c9850",
   "lastOpenFiles": [
+    "Sin título.canvas",
+    "SIST2/Crisis del Software.md",
     "SIST2/Ingeniería de Software.md",
     "Ingeniería en Software.md",
-    "SIST2/Crisis del Software.md",
     "SIST2/Imagenes/Pasted image 20250914174014.png",
     "SIST2/Imagenes/Pasted image 20250914172724.png",
     "SIST2/Imagenes/Pasted image 20250914172452.png",

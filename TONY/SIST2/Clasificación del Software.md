@@ -1,16 +1,6 @@
-El [[Software]] se puede clasificar dependiendo el  *criterio*:
+Se puede clasificar dependiendo de  **2 Criterios**:
 
-Según el **hambito de aplicación**: 
+Según el **[[Hambito de Aplicación]]**
 
-* [[Software de Sistemas]]
-* [[Software de Gestión]]
-* [[Software Científico]]
-* [[Software Empotrado]]
-* [[Software de Utilitarios]]
-* [[Software de IA]]
+Según el :**[[Momento de Registro]]** 
 
-Según el **Momento de Registro**: 
-
-* [[Software Por Lotes]]
-* [[Software en Linea]]
-* [[Software En Tiempo Real]]
