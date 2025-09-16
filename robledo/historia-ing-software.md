@@ -6,7 +6,7 @@ Perfecto, podemos explicar el gráfico **en orden cronológico** integrando la h
 ---
 
 ## Evolución del Software según el gráfico
-![[documentacion/_5_IngSoftware_CV.pdf#page=5]]
+![[documentacion/SIST2/_5_IngSoftware_CV.pdf#page=5]]
 
 
 
