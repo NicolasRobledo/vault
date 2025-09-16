@@ -23,3 +23,10 @@ La disciplina se organiza en **cuatro capas inter-dependientes**:
 4. **Compromiso con la calidad**
     - Enfoque de mejora continua.
     - Garantiza que los procesos, métodos y herramientas produzcan software con valor real para el cliente y con altos estándares de confiabilidad.
+
+De este concepto de desencadena: [[Proceso de Construcción de Software]]
+
+
+### Cita Pelada:
+
+> _Hay que poner todo lo que dijo esa pelada acerca de esto

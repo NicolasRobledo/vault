@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ed073f67d9ca7abf",
+        "id": "6545fa7eb34e1540",
         "type": "tabs",
         "children": [
           {
-            "id": "d96c4a6bce9c702e",
+            "id": "24fc5885b09fdb1d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Proceso Software frente a Ciclo de Vida.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Proceso Software frente a Ciclo de Vida"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -78,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a7134be73e4de721",
@@ -171,27 +166,44 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d96c4a6bce9c702e",
+  "active": "557e29083c23cf52",
   "lastOpenFiles": [
-    "Tipos de Software/Software Por Lotes.md",
-    "Ingeniería de Software.md",
-    "Conceptos Basicos/Software.md",
+    "Ingenieria de Software/Clasificación del Software.md",
+    "Ingenieria de Software",
+    "Tipos de Software/Momento de Registro.md",
+    "Ciclos de vida/Modelos de Ciclo de Vida.md",
+    "Ingenieria de Software/Ingeniería de Software.md",
+    "Ingenieria de Software/Crisis del Software.md",
+    "Ciclos de vida",
     "Practica.md",
-    "Proceso Software frente a Ciclo de Vida.md",
-    "Crisis del Software.md",
-    "Imagenes/Pasted image 20250914172724.png",
-    "Clasificación del Software.md",
+    "Ciclo de Vida del Software.md",
+    "Ciclos de vida/Ciclo de Vida Paralelo.md",
+    "Ciclos de vida/Ciclo de Vida Espiral.md",
+    "Ciclos de vida/Ciclo de Vida Prototipo Alternativo.md",
+    "Ciclos de vida/Ciclo de Vida Prototipación.md",
+    "Ciclos de vida/Ciclo de Vida Clásico Alternativo.md",
+    "Ciclos de vida/Ciclo de Vida Clásico.md",
+    "Imagenes/Pasted image 20250916174844.png",
+    "Imagenes/Pasted image 20250916174759.png",
+    "Imagenes/Pasted image 20250916174729.png",
+    "Imagenes/Pasted image 20250916174723.png",
+    "Imagenes/Pasted image 20250916174702.png",
+    "Imagenes/Pasted image 20250916174538.png",
+    "Imagenes/Pasted image 20250916174443.png",
+    "Ingenieria de Software/Proceso de Construcción de Software.md",
+    "Conceptos Basicos/Software.md",
+    "Ciclos de Vida Iniciales.md",
+    "Imagenes/Pasted image 20250916164934.png",
+    "Imagenes/Pasted image 20250916164704.png",
+    "Imagenes/Pasted image 20250916164021.png",
+    "Tipos de Software/Software Por Lotes.md",
     "Tipos de Software/Hambito de Aplicación.md",
-    "Momento de Registro.md",
     "Tipos de Software/Software En Tiempo Real.md",
     "Tipos de Software/Software en Linea.md",
     "Tipos de Software/Software de IA.md",
     "Tipos de Software/Software de Utilitarios.md",
     "Tipos de Software/Software Empotrado.md",
     "Tipos de Software/Software Científico.md",
-    "Tipos de Software/Software de Gestión.md",
-    "Tipos de Software/Software de Sistemas.md",
-    "Clasificacion del software.md",
-    "APUNTE MODELO - - - - - - - - -.md"
+    "Tipos de Software/Software de Gestión.md"
   ]
 }

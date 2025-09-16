@@ -22,9 +22,3 @@ Es el *elemento lógico de los sistemas informáticos*. Condiciona el comportami
 #### Por su historia podemos encontrar:
 
 [[Crisis del Software]]
-
-#### Procesos del Software:
-
-- [[Proceso de Construcción de Software]] (Definición extendida, por componentes)
-- [[Proceso Software frente a Ciclo de Vida]] (Se desarrolla, No se desgasta, “A medida”)
-- [[Ciclos de Vida Iniciales]] (Comparación con Hardware, Curva Teórica y curva real)
