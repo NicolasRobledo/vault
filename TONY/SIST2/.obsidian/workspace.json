@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Conceptos Basicos/Software.md",
+                "file": "Proceso Software frente a Ciclo de Vida.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Software"
+              "title": "Proceso Software frente a Ciclo de Vida"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a7134be73e4de721",
@@ -172,15 +173,16 @@
   },
   "active": "d96c4a6bce9c702e",
   "lastOpenFiles": [
-    "Proceso Software frente a Ciclo de Vida.md",
-    "Conceptos Basicos/Software.md",
+    "Tipos de Software/Software Por Lotes.md",
     "Ingeniería de Software.md",
+    "Conceptos Basicos/Software.md",
+    "Practica.md",
+    "Proceso Software frente a Ciclo de Vida.md",
     "Crisis del Software.md",
     "Imagenes/Pasted image 20250914172724.png",
     "Clasificación del Software.md",
     "Tipos de Software/Hambito de Aplicación.md",
     "Momento de Registro.md",
-    "Tipos de Software/Software Por Lotes.md",
     "Tipos de Software/Software En Tiempo Real.md",
     "Tipos de Software/Software en Linea.md",
     "Tipos de Software/Software de IA.md",
