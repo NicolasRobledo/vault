@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "robledo/historia-ing-software.md",
+                "file": "robledo/script-generador-svg.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "historia-ing-software"
+              "title": "script-generador-svg"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c42e506aca7de907",
@@ -172,22 +171,36 @@
   },
   "active": "c86f99061e6db6c0",
   "lastOpenFiles": [
+    "robledo/img/filmina5/pagina_27.svg",
+    "robledo/img/filmina5/pagina_26.svg",
+    "robledo/img/filmina5/pagina_25.svg",
+    "robledo/img/filmina5/pagina_24.svg",
+    "robledo/img/filmina5/pagina_23.svg",
+    "robledo/img/filmina5/pagina_22.svg",
+    "robledo/img/filmina5/pagina_21.svg",
+    "robledo/img/filmina5/pagina_20.svg",
+    "robledo/img/filmina5/pagina_19.svg",
+    "robledo/img/filmina5/pagina_18.svg",
+    "robledo/img/filmina5/pagina_17.svg",
+    "robledo/script-generador-svg.md",
+    "robledo/img/filmina5",
+    "robledo/img/pdf2svgs.sh",
+    "robledo/img/filmina4",
+    "robledo/img/_5_IngSoftware_CV.pdf",
+    "robledo/img/_4_SoftwareClasif.pdf",
+    "robledo/img",
+    "robledo/historia-ing-software.md",
     "robledo/clasificacion-software.md",
     "documentacion/SIST2/_4_SoftwareClasif.pdf",
     "documentacion/SIST2/_5_IngSoftware_CV.pdf",
     "TONY/SIST2/Tipos de Software/Software de Gestión.md",
     "TONY/SIST2/Tipos de Software/Software Científico.md",
     "TONY/SIST2/Tipos de Software/Hambito de Aplicación.md",
-    "TONY/SIST2/Imagenes/Pasted image 20250914174014.png",
-    "TONY/SIST2/Imagenes/Pasted image 20250914172724.png",
-    "TONY/SIST2/Imagenes/Pasted image 20250914172452.png",
-    "TONY/SIST2/Imagenes/Pasted image 20250914171023.png",
     "TONY/SIST2/Ingeniería de Software.md",
     "TONY/SIST2/Momento de Registro.md",
     "TONY/SIST2/Tipos de Software/Software En Tiempo Real.md",
     "TONY/SIST2/Crisis del Software.md",
     "TONY/SIST2/Conceptos Basicos/Software.md",
-    "robledo/historia-ing-software.md",
     "documentacion/SIST2/2do 2024-1.pdf",
     "TONY/SIST2/Clasificación del Software.md",
     "TONY/SIST2/Tipos de Software/Software en Linea.md",
@@ -196,15 +209,9 @@
     "TONY/SIST2/Tipos de Software/Software de IA.md",
     "TONY/Obsidian Vault/12Sep Teoria.md",
     "robledo/docs/_4_SoftwareClasif.pdf",
-    "robledo/docs/_5_IngSoftware_CV.pdf",
     "README.md",
     "prueba.md",
-    "robledo/docs",
     "TONY/SIST2/Tipos de Software/Software de Utilitarios.md",
-    "TONY/SIST2/Tipos de Software/Software Empotrado.md",
-    "TONY/SIST2/Tipos de Software",
-    "TONY/SIST2/Imagenes",
-    "TONY/SIST2/Conceptos Basicos",
-    "TONY/SIST2"
+    "TONY/SIST2/Tipos de Software/Software Empotrado.md"
   ]
 }
