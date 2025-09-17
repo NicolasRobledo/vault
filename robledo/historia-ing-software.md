@@ -52,13 +52,7 @@ Perfecto, podemos explicar el gráfico **en orden cronológico** integrando la h
    * **Ventaja:** Incrementa la productividad y reduce errores humanos en tareas repetitivas o especializadas.
    * **Problemas:** No solucionan todos los problemas estructurales de grandes sistemas heredados.
    * **Aforismo:** “No hay lenguaje que sustituya un buen diseño de sistema.”
-
 ---
-
-¡Claro! Te lo explico de manera clara y cronológica:
-
----
-
 ## Crisis del software en los años 60
 
 Durante la **década de 1960**, la informática comenzó a expandirse rápidamente: grandes computadoras se utilizaban para tareas complejas en empresas, gobiernos y universidades. Sin embargo, surgió un problema crítico que se llamó la **crisis del software**.
@@ -89,10 +83,7 @@ De esta reunión y las discusiones posteriores nació el concepto de **ingenier�
 * Tratar el desarrollo de software como una **disciplina profesional** y no solo artesanal.
 * Garantizar que los sistemas sean **fiables, mantenibles y documentados**.
 * Introducir metodologías, herramientas y estándares que redujeran errores y mejoraran la productividad.
-
-
 ---
-
 ## 1️⃣ Qué es la **Ingeniería**
 
 La **ingeniería** es la disciplina que aplica **conocimientos científicos, matemáticos y técnicos** para **diseñar, construir y mantener soluciones útiles** a problemas del mundo real.
@@ -101,9 +92,7 @@ En otras palabras:
 
 * No es solo “hacer cosas que funcionan”, sino **hacerlas de manera planificada, segura y eficiente**.
 * Por ejemplo: un ingeniero civil no solo pone ladrillos; diseña estructuras resistentes, calcula fuerzas y documenta todo el proceso.
-
 ---
-
 ## 2️⃣ Qué es la **Ingeniería de Software**
 
 La **ingeniería de software** aplica los mismos principios de la ingeniería **pero al software**.
@@ -121,7 +110,6 @@ Entonces, la ingeniería de software se propuso:
 ✅ Es decir, **llevar la disciplina y la sistematicidad de la ingeniería clásica al mundo del software**.
 
 ---
-
 💡 **Analogía:**
 
 * Hacer software sin ingeniería es como construir un puente sin cálculos: puede sostenerse por suerte, pero es muy arriesgado y difícil de mantener.
