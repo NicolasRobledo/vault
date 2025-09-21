@@ -11,13 +11,10 @@ Cada participante tiene su espacio personal y además existe un **área común**
 
 ```
 .
-├── cayapa/          # Resúmenes y notas personales de Cayapa
+├── callapa/          # Resúmenes y notas personales de Callapa
 ├── robledo/         # Resúmenes y notas personales de Robledo
 ├── tony/            # Resúmenes y notas personales de Tony
-├── comun/           # Área compartida (todos pueden editar)
-│   ├── materias/    # Notas organizadas por materia
-│   └── imagenes/    # Recursos gráficos compartidos
-└── documentacion/   # Manuales y guías generales
+└── documentacion/   # Manuales y guías generales (Material que si compartiremos, manejaremos la misma documentacion.)
 ```
 
 ---
@@ -80,6 +77,6 @@ Recordar que el **área común es de todos**, y que cada uno organiza su carpeta
 
 ## ✍️ Colaboradores iniciales
 
-- Cayapa
+- Callapa
 - Robledo  
 - Tony
