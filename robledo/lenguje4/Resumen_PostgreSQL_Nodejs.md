@@ -173,3 +173,11 @@ curl -X POST http://186.123.108.73:3000/comentarios \
   -d '{"texto": "Hola Mundo"}'
 
 ```
+
+```bash
+# Enviar comentario
+curl -X POST https://robledo.website/comentarios \
+  -H "Content-Type: application/json" \
+  -d '{"texto": "Hola Mundo"}'
+
+```
