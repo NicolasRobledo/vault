@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>segunda-ley-termodinamica</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<h1
+id="segunda-ley-de-la-termodinámica---eficiencia-de-máquinas-térmicas">📘
+Segunda Ley de la Termodinámica - Eficiencia de Máquinas Térmicas</h1>
+<h2 id="definición-de-eficiencia">🔹 Definición de Eficiencia</h2>
+<p>La <strong>eficiencia</strong> <span class="math inline">\eta</span>
+de una máquina térmica se define como:</p>
+<p><span class="math display">
+\eta = \frac{W}{Q_h} = \frac{Q_h - |Q_c|}{Q_h} = 1 - \frac{|Q_c|}{Q_h}
+</span></p>
+<p><strong>Donde:</strong> - <span class="math inline">\eta</span>:
+Eficiencia de la máquina térmica (adimensional, <span
+class="math inline">0 \leq \eta &lt; 1</span>) - <span
+class="math inline">W</span>: Trabajo neto realizado por la máquina
+<span class="math inline">J</span> - <span
+class="math inline">Q_h</span>: Calor suministrado por la fuente
+caliente <span class="math inline">J</span> - <span
+class="math inline">Q_c</span>: Calor expulsado a la fuente fría <span
+class="math inline">J</span>, se usa valor absoluto <span
+class="math inline">|Q_c|</span></p>
+<p><strong>🤔 Explicación en criollo:</strong> La eficiencia te dice qué
+tan buena es una máquina para convertir el calor que recibe en trabajo
+útil. Si fuera 100%, significaría que toda la energía del combustible se
+convierte en trabajo, pero en la realidad siempre se pierde algo de
+calor.</p>
+<hr />
+<h2 id="relación-fundamental">🔹 Relación Fundamental</h2>
+<p>El <strong>trabajo neto</strong> está relacionado con los calores
+mediante:</p>
+<p><span class="math display">
+W = Q_h + Q_c
+</span></p>
+<p>Dado que <span class="math inline">Q_c &lt; 0</span> (calor
+expulsado), también podemos escribir:</p>
+<p><span class="math display">
+W = Q_h - |Q_c|
+</span></p>
+<p><strong>🤔 Explicación en criollo:</strong> Es como un balance de
+energía: el calor que entra <span class="math inline">Q_h</span> se
+reparte entre el trabajo útil que obtenemos <span
+class="math inline">W</span> y el calor que se escapa o se pierde <span
+class="math inline">Q_c</span>. Por eso el trabajo siempre es menor que
+el calor que le metés a la máquina.</p>
+<hr />
+<h2 id="eficiencia-de-carnot-límite-máximo-teórico">🔹 Eficiencia de
+Carnot (Límite Máximo Teórico)</h2>
+<p>Para cualquier máquina térmica que opere entre dos temperaturas:</p>
+<p><span class="math display">
+\eta_{\text{Carnot}} = 1 - \frac{T_c}{T_h}
+</span></p>
+<p><strong>Donde:</strong> - <span class="math inline">T_h</span>:
+Temperatura de la fuente caliente <span class="math inline">K</span> -
+<span class="math inline">T_c</span>: Temperatura de la fuente fría
+<span class="math inline">K</span></p>
+<p><strong>Condiciones:</strong> - Temperaturas en Kelvin - Máquina
+reversible (ideal) - Procesos cuasi-estáticos</p>
+<p><strong>🤔 Explicación en criollo:</strong> Esta es la eficiencia
+máxima que podría tener una máquina perfecta que no existe en la
+realidad. Te dice que cuanto más caliente esté la fuente de calor y más
+fría esté la fuente de enfriamiento, mejor puede ser la eficiencia. Pero
+nunca podrá ser del 100% a menos que la fuente fría esté al cero
+absoluto (-273°C), lo cual es imposible.</p>
+<hr />
+<h2 id="comparación-con-máquinas-reales">🔹 Comparación con Máquinas
+Reales</h2>
+<p>Para máquinas reales (irreversibles):</p>
+<p><span class="math display">
+\eta_{\text{real}} = \eta_{\text{Carnot}} \times \eta_{\text{interna}}
+&lt; \eta_{\text{Carnot}}
+</span></p>
+<p><strong>Factores que reducen la eficiencia real:</strong> - Fricción
+en partes móviles - Pérdidas de calor por aislamiento imperfecto -
+Turbulencias y resistencias fluidodinámicas - Procesos de combustión
+incompletos</p>
+<p><strong>🤔 Explicación en criollo:</strong> Las máquinas de verdad
+siempre son menos eficientes que la máquina ideal de Carnot porque
+tienen pérdidas por rozamiento, el calor se escapa por las paredes, y
+nada es perfecto. Por eso un motor de auto tiene eficiencias del 20-30%,
+no del 60-70% que teóricamente podría tener.</p>
+<hr />
+<h2 id="limitaciones-de-la-segunda-ley">🔹 Limitaciones de la Segunda
+Ley</h2>
+<p><strong>La eficiencia nunca puede alcanzar el 100%:</strong></p>
+<p><span class="math display">
+\eta &lt; 1
+</span></p>
+<p><strong>Razón física:</strong> Siempre existe calor expulsado <span
+class="math inline">|Q_c| &gt; 0</span>, por lo que:</p>
+<p><span class="math display">
+\frac{|Q_c|}{Q_h} &gt; 0 \quad \Rightarrow \quad \eta = 1 -
+\frac{|Q_c|}{Q_h} &lt; 1
+</span></p>
+<p><strong>Para mejorar la eficiencia:</strong> Minimizar <span
+class="math inline">|Q_c|</span> respecto a <span
+class="math inline">Q_h</span>.</p>
+<p><strong>🤔 Explicación en criollo:</strong> La naturaleza es así: no
+podés construir una máquina que convierta todo el calor en trabajo.
+Siempre tiene que botar algo de calor al ambiente. Es como una ley
+fundamental del universo - nada es gratis en términos de energía.</p>
+<hr />
+<p><strong>💡 Conclusión:</strong> La segunda ley establece un límite
+fundamental a la eficiencia de las máquinas térmicas, haciendo imposible
+el motor de movimiento perpetuo. La eficiencia de Carnot representa el
+mejor caso posible, mientras que las máquinas reales operan por debajo
+de este límite debido a irreversibilidades.</p>
+</body>
+</html>

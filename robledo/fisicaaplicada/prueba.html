@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>calor</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#calor-específico" id="toc-calor-específico">📘 Calor
+Específico</a>
+<ul>
+<li><a href="#definición" id="toc-definición">🔹 Definición</a></li>
+<li><a href="#fórmula-general" id="toc-fórmula-general">🔹 Fórmula
+general</a></li>
+<li><a href="#para-cambios-de-estado" id="toc-para-cambios-de-estado">🔹
+Para cambios de estado</a></li>
+<li><a href="#variantes-comunes" id="toc-variantes-comunes">🔹 Variantes
+comunes</a></li>
+<li><a href="#ejemplo-práctico" id="toc-ejemplo-práctico">🔹 Ejemplo
+práctico</a></li>
+</ul></li>
+<li><a href="#transferencia-de-calor" id="toc-transferencia-de-calor">📘
+Transferencia de Calor</a>
+<ul>
+<li><a href="#conducción-por-contacto"
+id="toc-conducción-por-contacto">🔹 1. Conducción (por
+contacto)</a></li>
+<li><a href="#convección-por-movimiento-de-fluidos"
+id="toc-convección-por-movimiento-de-fluidos">🔹 2. Convección (por
+movimiento de fluidos)</a></li>
+<li><a href="#radiación-transferencia-por-ondas"
+id="toc-radiación-transferencia-por-ondas">🔹 3. Radiación
+(transferencia por ondas)</a></li>
+<li><a href="#resumen-de-mecanismos" id="toc-resumen-de-mecanismos">🔹
+Resumen de mecanismos</a></li>
+</ul></li>
+<li><a href="#conversión-de-temperaturas"
+id="toc-conversión-de-temperaturas">🌡️ Conversión de Temperaturas</a>
+<ul>
+<li><a href="#celsius-fahrenheit" id="toc-celsius-fahrenheit">1️⃣ Celsius
+↔︎ Fahrenheit</a>
+<ul>
+<li><a href="#de-celsius-a-fahrenheit"
+id="toc-de-celsius-a-fahrenheit">De Celsius a Fahrenheit:</a></li>
+<li><a href="#de-fahrenheit-a-celsius"
+id="toc-de-fahrenheit-a-celsius">De Fahrenheit a Celsius:</a></li>
+</ul></li>
+<li><a href="#celsius-kelvin" id="toc-celsius-kelvin">2️⃣ Celsius ↔︎
+Kelvin</a>
+<ul>
+<li><a href="#de-celsius-a-kelvin" id="toc-de-celsius-a-kelvin">De
+Celsius a Kelvin:</a></li>
+<li><a href="#de-kelvin-a-celsius" id="toc-de-kelvin-a-celsius">De
+Kelvin a Celsius:</a></li>
+</ul></li>
+<li><a href="#fahrenheit-kelvin" id="toc-fahrenheit-kelvin">3️⃣
+Fahrenheit ↔︎ Kelvin</a>
+<ul>
+<li><a href="#de-fahrenheit-a-kelvin" id="toc-de-fahrenheit-a-kelvin">De
+Fahrenheit a Kelvin:</a></li>
+<li><a href="#de-kelvin-a-fahrenheit" id="toc-de-kelvin-a-fahrenheit">De
+Kelvin a Fahrenheit:</a></li>
+</ul></li>
+<li><a href="#fórmulas-de-eficiencia-térmica-y-ciclos"
+id="toc-fórmulas-de-eficiencia-térmica-y-ciclos">🔹 Fórmulas de
+eficiencia térmica y ciclos</a></li>
+</ul></li>
+<li><a href="#expansión-térmica-con-fuerza-restringida"
+id="toc-expansión-térmica-con-fuerza-restringida">🌡️ Expansión Térmica
+con Fuerza Restringida</a>
+<ul>
+<li><a href="#expansión-lineal-libre" id="toc-expansión-lineal-libre">1️⃣
+Expansión Lineal Libre</a></li>
+<li><a href="#material-restringido-fuerza-interna"
+id="toc-material-restringido-fuerza-interna">2️⃣ Material Restringido:
+Fuerza Interna</a></li>
+</ul></li>
+<li><a href="#espejos-esféricos-y-planos"
+id="toc-espejos-esféricos-y-planos">📘 Espejos Esféricos y Planos</a>
+<ul>
+<li><a href="#espejo-esférico" id="toc-espejo-esférico">🔹 Espejo
+Esférico</a></li>
+<li><a href="#superficie-reflectiva-plana"
+id="toc-superficie-reflectiva-plana">🔹 Superficie Reflectiva
+Plana</a></li>
+</ul></li>
+<li><a href="#expansión-térmica" id="toc-expansión-térmica">📘 Expansión
+Térmica</a>
+<ul>
+<li><a href="#expansión-lineal" id="toc-expansión-lineal">1️⃣ Expansión
+Lineal</a></li>
+<li><a href="#expansión-superficial" id="toc-expansión-superficial">2️⃣
+Expansión Superficial</a></li>
+<li><a href="#expansión-volumétrica" id="toc-expansión-volumétrica">3️⃣
+Expansión Volumétrica</a></li>
+</ul></li>
+<li><a href="#ecuaciones-de-la-termodinámica"
+id="toc-ecuaciones-de-la-termodinámica">📘 Ecuaciones de la
+Termodinámica</a>
+<ul>
+<li><a href="#ecuación-de-estado-del-gas-ideal"
+id="toc-ecuación-de-estado-del-gas-ideal">🔹 Ecuación de Estado del Gas
+Ideal</a></li>
+<li><a href="#primera-ley-de-la-termodinámica"
+id="toc-primera-ley-de-la-termodinámica">🔹 Primera Ley de la
+Termodinámica</a></li>
+<li><a href="#trabajo-en-procesos-térmicos"
+id="toc-trabajo-en-procesos-térmicos">🔹 Trabajo en Procesos
+Térmicos</a></li>
+<li><a href="#eficiencia-térmica" id="toc-eficiencia-térmica">🔹
+Eficiencia Térmica</a></li>
+</ul></li>
+<li><a href="#superficies-reflectivas-y-esféricas"
+id="toc-superficies-reflectivas-y-esféricas">📘 Superficies Reflectivas
+y Esféricas</a>
+<ul>
+<li><a href="#relación-entre-objeto-e-imagen"
+id="toc-relación-entre-objeto-e-imagen">🔹 1. Relación entre Objeto e
+Imagen</a></li>
+<li><a href="#aumento-lateral-lente" id="toc-aumento-lateral-lente">🔹
+2. Aumento Lateral Lente</a></li>
+<li><a href="#lentes-delgadas" id="toc-lentes-delgadas">🔹 3. Lentes
+Delgadas</a></li>
+<li><a href="#ecuación-del-fabricante-lente-delgada"
+id="toc-ecuación-del-fabricante-lente-delgada">🔹 4. Ecuación del
+Fabricante (Lente Delgada)</a></li>
+<li><a href="#resumen-de-fórmulas" id="toc-resumen-de-fórmulas">🔹 5.
+Resumen de Fórmulas</a></li>
+</ul></li>
+<li><a href="#refracción-de-la-luz" id="toc-refracción-de-la-luz">📘
+Refracción de la Luz</a>
+<ul>
+<li><a href="#índice-de-refracción" id="toc-índice-de-refracción">🔹
+Índice de Refracción</a></li>
+<li><a href="#ley-de-refracción-ley-de-snell"
+id="toc-ley-de-refracción-ley-de-snell">🔹 Ley de Refracción (Ley de
+Snell)</a></li>
+<li><a href="#longitud-de-onda-en-un-medio"
+id="toc-longitud-de-onda-en-un-medio">🔹 Longitud de onda en un
+medio</a></li>
+</ul></li>
+<li><a href="#óptica-geométrica---espejos"
+id="toc-óptica-geométrica---espejos">📘 Óptica Geométrica - Espejos</a>
+<ul>
+<li><a href="#aumento-lateral" id="toc-aumento-lateral">🔹 Aumento
+Lateral</a></li>
+<li><a href="#distancia-focal-de-espejos-esféricos"
+id="toc-distancia-focal-de-espejos-esféricos">🔹 Distancia Focal de
+Espejos Esféricos</a></li>
+<li><a href="#espejo-plano" id="toc-espejo-plano">🔹 Espejo
+Plano</a></li>
+<li><a href="#ecuación-general-de-espejos"
+id="toc-ecuación-general-de-espejos">🔹 Ecuación General de
+Espejos</a></li>
+</ul></li>
+<li><a href="#procesos-termodinámicos-formulario-completo"
+id="toc-procesos-termodinámicos-formulario-completo">⚡ Procesos
+Termodinámicos – Formulario Completo</a>
+<ul>
+<li><a href="#significado-de-las-variables"
+id="toc-significado-de-las-variables">📌 Significado de las
+Variables</a></li>
+<li><a href="#adiabático" id="toc-adiabático">🔹 Adiabático</a></li>
+<li><a href="#isocórico-volumen-constante"
+id="toc-isocórico-volumen-constante">🔹 Isocórico (Volumen
+constante)</a></li>
+<li><a href="#isobárico-presión-constante"
+id="toc-isobárico-presión-constante">🔹 Isobárico (Presión
+constante)</a></li>
+<li><a href="#isotérmico-temperatura-constante"
+id="toc-isotérmico-temperatura-constante">🔹 Isotérmico (Temperatura
+constante)</a></li>
+<li><a href="#resumen-ultra-rápido" id="toc-resumen-ultra-rápido">📌
+Resumen Ultra Rápido</a></li>
+<li><a href="#recordatorio-importante"
+id="toc-recordatorio-importante">💡 Recordatorio importante</a></li>
+</ul></li>
+<li><a href="#refrigeradores-y-entropía"
+id="toc-refrigeradores-y-entropía">📘 Refrigeradores y Entropía</a>
+<ul>
+<li><a href="#coeficiente-de-rendimiento-de-un-refrigerador"
+id="toc-coeficiente-de-rendimiento-de-un-refrigerador">🔹 Coeficiente de
+Rendimiento de un Refrigerador</a></li>
+<li><a href="#entropía-en-un-proceso-reversible"
+id="toc-entropía-en-un-proceso-reversible">🔹 Entropía en un Proceso
+Reversible</a></li>
+<li><a href="#expresión-microscópica-de-la-entropía"
+id="toc-expresión-microscópica-de-la-entropía">🔹 Expresión Microscópica
+de la Entropía</a></li>
+<li><a href="#notas-adicionales" id="toc-notas-adicionales">🔹 Notas
+Adicionales</a></li>
+</ul></li>
+<li><a
+href="#segunda-ley-de-la-termodinámica---eficiencia-de-máquinas-térmicas"
+id="toc-segunda-ley-de-la-termodinámica---eficiencia-de-máquinas-térmicas">📘
+Segunda Ley de la Termodinámica - Eficiencia de Máquinas Térmicas</a>
+<ul>
+<li><a href="#definición-de-eficiencia"
+id="toc-definición-de-eficiencia">🔹 Definición de Eficiencia</a></li>
+<li><a href="#relación-fundamental" id="toc-relación-fundamental">🔹
+Relación Fundamental</a></li>
+<li><a href="#eficiencia-de-carnot-límite-máximo-teórico"
+id="toc-eficiencia-de-carnot-límite-máximo-teórico">🔹 Eficiencia de
+Carnot (Límite Máximo Teórico)</a></li>
+<li><a href="#comparación-con-máquinas-reales"
+id="toc-comparación-con-máquinas-reales">🔹 Comparación con Máquinas
+Reales</a></li>
+<li><a href="#limitaciones-de-la-segunda-ley"
+id="toc-limitaciones-de-la-segunda-ley">🔹 Limitaciones de la Segunda
+Ley</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="calor-específico">📘 Calor Específico</h1>
+<h2 id="definición">🔹 Definición</h2>
+<p>El <strong>calor específico</strong> es la cantidad de energía
+térmica necesaria para aumentar la temperatura de 1 kg de una sustancia
+en <span class="math inline">\(1 °C o 1 K\)</span>.</p>
+<blockquote>
+<p><strong>En criollo:</strong> Es cuánta “calorías” o energía necesitás
+para calentar algo. Cada material tiene su propio “ritmo” para
+calentarse.</p>
+</blockquote>
+<hr />
+<h2 id="fórmula-general">🔹 Fórmula general</h2>
+<p>La relación entre el calor absorbido, la masa y el cambio de
+temperatura es:</p>
+<p><span class="math display">\[
+Q = m \, c \, \Delta T
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(Q\)</span> = calor absorbido o cedido
+<span class="math inline">\(Joules, J\)</span><br />
+- <span class="math inline">\(m\)</span> = masa de la sustancia <span
+class="math inline">\(kg\)</span><br />
+- <span class="math inline">\(c\)</span> = calor específico <span
+class="math inline">\(J/kg·K\)</span><br />
+- <span class="math inline">\(\Delta T = T_f - T_i\)</span> = cambio de
+temperatura <span class="math inline">\(K o °C\)</span></p>
+<blockquote>
+<p><strong>En criollo:</strong> Para calentar más rápido, necesitás
+menos masa, más calor específico o mayor diferencia de temperatura.</p>
+</blockquote>
+<hr />
+<h2 id="para-cambios-de-estado">🔹 Para cambios de estado</h2>
+<p>Durante un cambio de fase (fusión, vaporización), la temperatura no
+cambia, y se usa el <strong>calor latente</strong>:</p>
+<p><span class="math display">\[
+Q = m \, L
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(L\)</span> = calor latente <span
+class="math inline">\(J/kg\)</span><br />
+- <span class="math inline">\(m\)</span> = masa <span
+class="math inline">\(kg\)</span></p>
+<blockquote>
+<p><strong>En criollo:</strong> Por ejemplo, derretir hielo requiere
+calor pero la temperatura sigue en 0 °C hasta que todo se derrita.</p>
+</blockquote>
+<hr />
+<h2 id="variantes-comunes">🔹 Variantes comunes</h2>
+<ul>
+<li>Calor específico de agua: <span class="math inline">\(c = 4186 \,
+\text{J/kg·K}\)</span><br />
+</li>
+<li>Calor específico del hierro: <span class="math inline">\(c \approx
+450 \, \text{J/kg·K}\)</span><br />
+</li>
+<li>Calor específico del cobre: <span class="math inline">\(c \approx
+385 \, \text{J/kg·K}\)</span></li>
+</ul>
+<blockquote>
+<p><strong>En criollo:</strong> El agua necesita mucho calor para subir
+de temperatura, mientras que el cobre se calienta rápido.</p>
+</blockquote>
+<hr />
+<h2 id="ejemplo-práctico">🔹 Ejemplo práctico</h2>
+<p>Si tenés <strong>2 kg de agua</strong> y querés calentarla de
+<strong>20 °C a 80 °C</strong>, el calor necesario es:</p>
+<p><span class="math display">\[
+Q = m \, c \, \Delta T = 2 \cdot 4186 \cdot (80 - 20) = 502,320 \,
+\text{J}
+\]</span></p>
+<blockquote>
+<p><strong>En criollo:</strong> Necesitás medio millón de Joules para
+calentar esos 2 kg de agua 60 grados.</p>
+</blockquote>
+<h1 id="transferencia-de-calor">📘 Transferencia de Calor</h1>
+<p>La <strong>transferencia de calor</strong> es el movimiento de
+energía térmica de un cuerpo a otro. Puede ocurrir de tres formas:
+<strong>conducción, convección y radiación</strong>.</p>
+<hr />
+<h2 id="conducción-por-contacto">🔹 1. Conducción (por contacto)</h2>
+<p>La <strong>conducción</strong> es el flujo de calor a través de un
+material <strong>sin que el material se mueva</strong>, debido a una
+diferencia de temperatura.</p>
+<p><strong>Ley de Fourier:</strong></p>
+<p><span class="math display">\[
+q = -k \, A \, \frac{dT}{dx}
+\]</span></p>
+<p>o para una barra de longitud <span class="math inline">\(L\)</span> y
+temperatura lineal:</p>
+<p><span class="math display">\[
+Q = k \, A \, \frac{T_1 - T_2}{L} \, \Delta t
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(q\)</span> = flujo de calor (W)<br />
+- <span class="math inline">\(Q\)</span> = calor transferido (J)<br />
+- <span class="math inline">\(k\)</span> = conductividad térmica
+(W/m·K)<br />
+- <span class="math inline">\(A\)</span> = área transversal (m²)<br />
+- <span class="math inline">\(T_1, T_2\)</span> = temperaturas de los
+extremos (K o °C)<br />
+- <span class="math inline">\(L\)</span> = longitud del material (m)</p>
+<blockquote>
+<p><strong>En criollo:</strong> El calor se pasa de una parte caliente a
+una fría, como cuando apoyás la mano en un metal caliente.</p>
+</blockquote>
+<hr />
+<h2 id="convección-por-movimiento-de-fluidos">🔹 2. Convección (por
+movimiento de fluidos)</h2>
+<p>La <strong>convección</strong> ocurre cuando el calor se transfiere
+<strong>a través de un fluido (líquido o gas) en
+movimiento</strong>.</p>
+<p><strong>Ley de enfriamiento de Newton:</strong></p>
+<p><span class="math display">\[
+q = h \, A \, (T_s - T_\infty)
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(q\)</span> = flujo de calor (W)<br />
+- <span class="math inline">\(h\)</span> = coeficiente de convección
+(W/m²·K)<br />
+- <span class="math inline">\(A\)</span> = área de la superficie
+(m²)<br />
+- <span class="math inline">\(T_s\)</span> = temperatura de la
+superficie (K o °C)<br />
+- <span class="math inline">\(T_\infty\)</span> = temperatura del fluido
+lejos de la superficie (K o °C)</p>
+<blockquote>
+<p><strong>En criollo:</strong> El calor se lleva el fluido, como el
+aire caliente que sube de un radiador o agua hirviendo que se mueve.</p>
+</blockquote>
+<hr />
+<h2 id="radiación-transferencia-por-ondas">🔹 3. Radiación
+(transferencia por ondas)</h2>
+<p>La <strong>radiación térmica</strong> es la transferencia de calor
+mediante <strong>ondas electromagnéticas</strong>, sin necesidad de
+contacto ni medio material.</p>
+<p><strong>Ley de Stefan-Boltzmann:</strong></p>
+<p><span class="math display">\[
+q = \epsilon \, \sigma \, A \, (T_s^4 - T_\text{amb}^4)
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(q\)</span> = flujo de calor (W)<br />
+- <span class="math inline">\(\epsilon\)</span> = emisividad de la
+superficie (0 ≤ ε ≤ 1)<br />
+- <span class="math inline">\(\sigma\)</span> = constante de
+Stefan-Boltzmann (<span class="math inline">\(5.67 \times
+10^{-8}\)</span> W/m²·K⁴)<br />
+- <span class="math inline">\(A\)</span> = área de la superficie
+(m²)<br />
+- <span class="math inline">\(T_s\)</span> = temperatura de la
+superficie (K)<br />
+- <span class="math inline">\(T_\text{amb}\)</span> = temperatura
+ambiente (K)</p>
+<blockquote>
+<p><strong>En criollo:</strong> El calor se manda por “luz infrarroja”,
+como el calor que sentís de un fuego sin tocarlo.</p>
+</blockquote>
+<hr />
+<h2 id="resumen-de-mecanismos">🔹 Resumen de mecanismos</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 21%" />
+<col style="width: 29%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mecanismo</th>
+<th>Medio necesario</th>
+<th>Forma de transferencia</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conducción</td>
+<td>Sólido</td>
+<td>Por contacto directo</td>
+<td>Mano en metal caliente</td>
+</tr>
+<tr>
+<td>Convección</td>
+<td>Líquido o gas</td>
+<td>Movimiento del fluido</td>
+<td>Aire calentado por un radiador</td>
+</tr>
+<tr>
+<td>Radiación</td>
+<td>No necesita medio</td>
+<td>Ondas electromagnéticas</td>
+<td>Sol calentando la Tierra</td>
+</tr>
+</tbody>
+</table>
+<h1 id="conversión-de-temperaturas">🌡️ Conversión de Temperaturas</h1>
+<p>Existen tres escalas principales de temperatura:</p>
+<ul>
+<li>Celsius (°C)<br />
+</li>
+<li>Fahrenheit (°F)<br />
+</li>
+<li>Kelvin (K)</li>
+</ul>
+<hr />
+<h2 id="celsius-fahrenheit">1️⃣ Celsius ↔︎ Fahrenheit</h2>
+<h3 id="de-celsius-a-fahrenheit">De Celsius a Fahrenheit:</h3>
+<p><span class="math display">\[
+°F = \frac{9}{5} \cdot °C + 32
+\]</span></p>
+<h3 id="de-fahrenheit-a-celsius">De Fahrenheit a Celsius:</h3>
+<p><span class="math display">\[
+°C = \frac{5}{9} \cdot (°F - 32)
+\]</span></p>
+<p><strong>Ejemplo:</strong> - 0°C → (0 + 32 = 32°F)<br />
+- 100°F → ( (100 - 32) °C)</p>
+<hr />
+<h2 id="celsius-kelvin">2️⃣ Celsius ↔︎ Kelvin</h2>
+<h3 id="de-celsius-a-kelvin">De Celsius a Kelvin:</h3>
+<p><span class="math display">\[
+K = °C + 273.15
+\]</span></p>
+<h3 id="de-kelvin-a-celsius">De Kelvin a Celsius:</h3>
+<p><span class="math display">\[
+°C = K - 273.15
+\]</span></p>
+<p><strong>Ejemplo:</strong> - 25°C → (25 + 273.15 = 298.15,K)<br />
+- 0 K → (0 - 273.15 = -273.15°C)</p>
+<hr />
+<h2 id="fahrenheit-kelvin">3️⃣ Fahrenheit ↔︎ Kelvin</h2>
+<h3 id="de-fahrenheit-a-kelvin">De Fahrenheit a Kelvin:</h3>
+<p><span class="math display">\[
+K = \frac{5}{9} (°F - 32) + 273.15
+\]</span></p>
+<h3 id="de-kelvin-a-fahrenheit">De Kelvin a Fahrenheit:</h3>
+<p><span class="math display">\[
+°F = \frac{9}{5} (K - 273.15) + 32
+\]</span></p>
+<p><strong>Ejemplo:</strong> - 212°F → <span
+class="math inline">\(\frac{5}{9} (212 - 32) + 273.15 =
+373.15\,K\)</span> - 0 K → <span class="math inline">\(\frac{9}{5} (0 -
+273.15) + 32 \approx -459.67°F\)</span></p>
+<hr />
+<ul>
+<li>0 K es el <strong>cero absoluto</strong>, la temperatura mínima
+posible.<br />
+</li>
+<li>Siempre verificar que las operaciones de suma/resta y
+multiplicación/división estén correctas al convertir.</li>
+</ul>
+<h2 id="fórmulas-de-eficiencia-térmica-y-ciclos">🔹 Fórmulas de
+eficiencia térmica y ciclos</h2>
+<p><strong>Ciclo Otto (gas ideal):</strong><br />
+<span class="math display">\[
+\eta_{\text{Otto}} = 1 - \frac{1}{r^{\gamma - 1}}
+\]</span></p>
+<p><strong>Refrigerador (coeficiente de desempeño <span
+class="math inline">\(K\)</span>):</strong><br />
+<span class="math display">\[
+K = \frac{|Q_C|}{|W|} = \frac{|Q_C|}{Q_H - Q_C}
+\]</span></p>
+<p><strong>Ciclo Carnot (eficiencia):</strong><br />
+<span class="math display">\[
+\eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H} = \frac{T_H - T_C}{T_H}
+\]</span></p>
+<p><span class="math display">\[
+\frac{Q_C}{Q_H} = \frac{T_C}{T_H}
+\]</span> ### 📋 Tabla de Variables</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 81%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Significado en Criollo</th>
+<th style="text-align: left;">Unidades Típicas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(\eta\)</span></strong> (eta)</td>
+<td style="text-align: left;"><strong>Eficiencia térmica:</strong> Qué
+porcentaje del calor que le metés a la máquina se convierte en trabajo
+útil.</td>
+<td style="text-align: left;">Sin unidades (o %)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(r\)</span></strong></td>
+<td style="text-align: left;"><strong>Relación de compresión:</strong>
+Cuántas veces más grande es el volumen cuando el pistón está abajo
+(<span class="math inline">\(V_{\text{máx}}\)</span>) comparado con
+cuando está arriba (<span
+class="math inline">\(V_{\text{mín}}\)</span>).</td>
+<td style="text-align: left;">Sin unidades</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(\gamma\)</span></strong> (gamma)</td>
+<td style="text-align: left;"><strong>Coeficiente adiabático:</strong>
+Una medida de cómo se comporta el gas cuando se comprime o expande sin
+perder calor. Para el aire es ~1.4.</td>
+<td style="text-align: left;">Sin unidades</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(K\)</span></strong></td>
+<td style="text-align: left;"><strong>Coeficiente de desempeño:</strong>
+Cuán “bueno” es el refrigerador para mover calor.</td>
+<td style="text-align: left;">Sin unidades</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(Q_H\)</span></strong></td>
+<td style="text-align: left;"><strong>Calor absorbido del foco
+caliente:</strong> El calor que le metés a la máquina (ej: de la
+combustión).</td>
+<td style="text-align: left;">Joules (J)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(Q_C\)</span></strong></td>
+<td style="text-align: left;"><strong>Calor cedido al foco
+frío:</strong> El calor que la máquina bota al ambiente (ej: por el
+radiador).</td>
+<td style="text-align: left;">Joules (J)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(W\)</span></strong></td>
+<td style="text-align: left;"><strong>Trabajo neto:</strong> El “laburo”
+útil que la máquina entrega.</td>
+<td style="text-align: left;">Joules (J)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(T_H\)</span></strong></td>
+<td style="text-align: left;"><strong>Temperatura de la fuente
+caliente:</strong> Temperatura de donde la máquina toma el calor.</td>
+<td style="text-align: left;">Kelvin (K)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\(T_C\)</span></strong></td>
+<td style="text-align: left;"><strong>Temperatura de la fuente
+fría:</strong> Temperatura a la que la máquina bota el calor
+residual.</td>
+<td style="text-align: left;">Kelvin (K)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>💡 Nota:</strong> En las fórmulas de Carnot,
+<strong>SIEMPRE</strong> usá la temperatura en Kelvin (K).</p>
+</blockquote>
+<h1 id="expansión-térmica-con-fuerza-restringida">🌡️ Expansión Térmica
+con Fuerza Restringida</h1>
+<p>Cuando un material <strong>no puede expandirse libremente</strong>,
+se genera una <strong>tensión interna</strong> debido al
+calentamiento.</p>
+<hr />
+<h2 id="expansión-lineal-libre">1️⃣ Expansión Lineal Libre</h2>
+<p>Si el material <strong>puede alargarse libremente</strong>:</p>
+<p><span class="math display">\[
+\Delta L = \alpha L_0 \Delta T
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\Delta L\)</span> → cambio de
+longitud<br />
+</li>
+<li><span class="math inline">\(L_0\)</span> → longitud inicial<br />
+</li>
+<li><span class="math inline">\(\alpha\)</span> → coeficiente de
+expansión lineal<br />
+</li>
+<li><span class="math inline">\(\Delta T\)</span> → cambio de
+temperatura</li>
+</ul>
+<p><strong>Explicación:</strong> Al calentar, la longitud aumenta; al
+enfriar, disminuye.</p>
+<hr />
+<h2 id="material-restringido-fuerza-interna">2️⃣ Material Restringido:
+Fuerza Interna</h2>
+<p>Si el material <strong>está fijo y no puede expandirse</strong>,
+aparece una <strong>fuerza interna</strong> (f):</p>
+<p><span class="math display">\[
+\frac{f}{A} = Y \cdot \frac{\Delta L}{L_0} = Y \cdot \alpha \Delta T
+\]</span></p>
+<ul>
+<li><span class="math inline">\(f\)</span> → fuerza que se genera<br />
+</li>
+<li><span class="math inline">\(A\)</span> → área transversal del
+material<br />
+</li>
+<li><span class="math inline">\(Y\)</span> → módulo de Young del
+material<br />
+</li>
+<li><span class="math inline">\(\frac{f}{A}\)</span> → tensión (estrés)
+inducida por la restricción<br />
+</li>
+<li><span class="math inline">\(\Delta L / L_0\)</span> → deformación
+(strain)</li>
+</ul>
+<p><strong>Explicación:</strong> La tensión es <strong>proporcional al
+cambio de temperatura</strong> y depende del material (Y y α).</p>
+<hr />
+<ul>
+<li>Si el material <strong>puede expandirse</strong>, no hay
+fuerza.<br />
+</li>
+<li>Si el material está <strong>completamente restringido</strong>, la
+fuerza se calcula con la fórmula anterior.<br />
+</li>
+<li>Esto se usa mucho en <strong>estructuras, puentes y rieles</strong>,
+donde se debe considerar la expansión térmica.</li>
+</ul>
+<h1 id="espejos-esféricos-y-planos">📘 Espejos Esféricos y Planos</h1>
+<h2 id="espejo-esférico">🔹 Espejo Esférico</h2>
+<ul>
+<li><strong>Ecuación de la distancia objeto-imagen
+(distorsión):</strong></li>
+</ul>
+<p><span class="math display">\[
+\frac{1}{s&#39;} + \frac{1}{s} = \frac{2}{r} = \frac{1}{f}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(s\)</span> = distancia del objeto al
+espejo<br />
+- <span class="math inline">\(s&#39;\)</span> = distancia de la imagen
+al espejo<br />
+- <span class="math inline">\(r\)</span> = radio de curvatura del
+espejo<br />
+- <span class="math inline">\(f\)</span> = distancia focal</p>
+<blockquote>
+<p>En criollo: Esta ecuación te relaciona dónde está el objeto, dónde se
+forma la imagen y qué tan “curvo” está el espejo.</p>
+</blockquote>
+<ul>
+<li><strong>Aumento lateral:</strong></li>
+</ul>
+<p><span class="math display">\[
+m = - \frac{s&#39;}{s}
+\]</span></p>
+<blockquote>
+<p>En criollo: El signo negativo indica que la imagen sale invertida
+respecto al objeto.</p>
+</blockquote>
+<hr />
+<h2 id="superficie-reflectiva-plana">🔹 Superficie Reflectiva Plana</h2>
+<ul>
+<li><strong>Ecuación de la distancia objeto-imagen:</strong></li>
+</ul>
+<p><span class="math display">\[
+\frac{n_a}{s} + \frac{n_b}{s&#39;} = 0
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(n_a, n_b\)</span> = índices de refracción
+de los medios (en un espejo plano usualmente <span
+class="math inline">\(n_a = n_b\)</span>)<br />
+- <span class="math inline">\(s\)</span> = distancia del objeto<br />
+- <span class="math inline">\(s&#39;\)</span> = distancia de la
+imagen</p>
+<blockquote>
+<p>En criollo: Cuando los índices son iguales, la imagen se forma a la
+misma distancia que el objeto.</p>
+</blockquote>
+<ul>
+<li><strong>Aumento lateral:</strong></li>
+</ul>
+<p><span class="math display">\[
+m = \frac{n_a s&#39;}{n_b s} = 1
+\]</span></p>
+<blockquote>
+<p>En criollo: En espejos planos, la imagen siempre tiene el mismo
+tamaño que el objeto.</p>
+</blockquote>
+<h1 id="expansión-térmica">📘 Expansión Térmica</h1>
+<h2 id="expansión-lineal">1️⃣ Expansión Lineal</h2>
+<p>Para cambios de longitud:</p>
+<p><span class="math display">\[
+\Delta L = \alpha L_0 \Delta T
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\Delta L\)</span> → cambio de
+longitud<br />
+</li>
+<li><span class="math inline">\(L_0\)</span> → longitud inicial<br />
+</li>
+<li><span class="math inline">\(\alpha\)</span> → coeficiente de
+expansión lineal<br />
+</li>
+<li><span class="math inline">\(\Delta T\)</span> → cambio de
+temperatura</li>
+</ul>
+<p><strong>Explicación:</strong> Al calentar, la longitud aumenta; al
+enfriar, disminuye.</p>
+<hr />
+<h2 id="expansión-superficial">2️⃣ Expansión Superficial</h2>
+<p>Para cambios de área de superficies planas:</p>
+<p><span class="math display">\[
+\Delta A = 2 \alpha A_0 \Delta T
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\Delta A\)</span> → cambio de área<br />
+</li>
+<li><span class="math inline">\(A_0\)</span> → área inicial<br />
+</li>
+<li><span class="math inline">\(\alpha\)</span> → coeficiente de
+expansión lineal<br />
+</li>
+<li><span class="math inline">\(\Delta T\)</span> → cambio de
+temperatura</li>
+</ul>
+<p><strong>Explicación:</strong> Cada dimensión lineal se expande, por
+lo que el área crece aproximadamente el doble que la lineal.</p>
+<hr />
+<h2 id="expansión-volumétrica">3️⃣ Expansión Volumétrica</h2>
+<p>Para cambios de volumen de sólidos o líquidos:</p>
+<p><span class="math display">\[
+\Delta V = \beta V_0 \Delta T \quad \text{con } \beta \approx 3\alpha
+\]</span></p>
+<ul>
+<li><span class="math inline">\(\Delta V\)</span> → cambio de
+volumen<br />
+</li>
+<li><span class="math inline">\(V_0\)</span> → volumen inicial<br />
+</li>
+<li><span class="math inline">\(\beta\)</span> → coeficiente de
+expansión volumétrica<br />
+</li>
+<li><span class="math inline">\(\Delta T\)</span> → cambio de
+temperatura</li>
+</ul>
+<p><strong>Explicación:</strong> Cada dimensión lineal se expande → el
+volumen crece aproximadamente tres veces más que la lineal.</p>
+<h1 id="ecuaciones-de-la-termodinámica">📘 Ecuaciones de la
+Termodinámica</h1>
+<h2 id="ecuación-de-estado-del-gas-ideal">🔹 Ecuación de Estado del Gas
+Ideal</h2>
+<p><span class="math display">\[
+PV = nRT
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(P\)</span> = presión<br />
+- <span class="math inline">\(V\)</span> = volumen<br />
+- <span class="math inline">\(n\)</span> = número de moles<br />
+- <span class="math inline">\(R\)</span> = constante universal de los
+gases<br />
+- <span class="math inline">\(T\)</span> = temperatura absoluta</p>
+<blockquote>
+<p><strong>En criollo:</strong> Esta ecuación relaciona presión, volumen
+y temperatura para gases ideales.</p>
+</blockquote>
+<h2 id="primera-ley-de-la-termodinámica">🔹 Primera Ley de la
+Termodinámica</h2>
+<p><span class="math display">\[
+\Delta U = Q - W
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(\Delta U\)</span> = cambio de energía
+interna<br />
+- <span class="math inline">\(Q\)</span> = calor agregado al
+sistema<br />
+- <span class="math inline">\(W\)</span> = trabajo realizado por el
+sistema</p>
+<blockquote>
+<p><strong>En criollo:</strong> La energía no se crea ni se destruye,
+solo se transforma (conservación de la energía).</p>
+</blockquote>
+<h2 id="trabajo-en-procesos-térmicos">🔹 Trabajo en Procesos
+Térmicos</h2>
+<p><strong>Trabajo general:</strong><br />
+<span class="math display">\[
+W = \int P \, dV
+\]</span></p>
+<p><strong>Proceso isotérmico (T constante):</strong><br />
+<span class="math display">\[
+W = nRT \ln\frac{V_2}{V_1}
+\]</span></p>
+<p><strong>Proceso isobárico (P constante):</strong><br />
+<span class="math display">\[
+W = P \Delta V
+\]</span></p>
+<blockquote>
+<p><strong>En criollo:</strong> El trabajo depende de cómo cambian el
+volumen y la presión.</p>
+</blockquote>
+<h2 id="eficiencia-térmica">🔹 Eficiencia Térmica</h2>
+<p><strong>Eficiencia general:</strong><br />
+<span class="math display">\[
+\eta = \frac{W}{Q_h} = 1 - \frac{Q_c}{Q_h}
+\]</span></p>
+<p><strong>Ciclo de Carnot:</strong><br />
+<span class="math display">\[
+\eta = 1 - \frac{T_c}{T_h}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(\eta\)</span> = eficiencia<br />
+- <span class="math inline">\(W\)</span> = trabajo neto<br />
+- <span class="math inline">\(Q_h\)</span> = calor absorbido de la
+fuente caliente<br />
+- <span class="math inline">\(Q_c\)</span> = calor cedido a la fuente
+fría<br />
+- <span class="math inline">\(T_h\)</span> = temperatura de la fuente
+caliente<br />
+- <span class="math inline">\(T_c\)</span> = temperatura de la fuente
+fría</p>
+<blockquote>
+<p><strong>En criollo:</strong> La eficiencia te dice qué porcentaje del
+calor se convierte en trabajo útil.</p>
+</blockquote>
+<h1 id="superficies-reflectivas-y-esféricas">📘 Superficies Reflectivas
+y Esféricas</h1>
+<h2 id="relación-entre-objeto-e-imagen">🔹 1. Relación entre Objeto e
+Imagen</h2>
+<p>Para una <strong>superficie esférica</strong> que separa dos medios
+con índices de refracción <span class="math inline">\(n_a\)</span> y
+<span class="math inline">\(n_b\)</span>, se cumple:</p>
+<p><span class="math display">\[
+\frac{n_a}{s} + \frac{n_b}{s&#39;} = \frac{n_b - n_a}{R}
+\]</span></p>
+<p><strong>Donde:</strong> - <span class="math inline">\(s\)</span>:
+Distancia del objeto a la superficie - <span
+class="math inline">\(s&#39;\)</span>: Distancia de la imagen a la
+superficie<br />
+- <span class="math inline">\(R\)</span>: Radio de curvatura de la
+superficie - <span class="math inline">\(n_a, n_b\)</span>: Índices de
+refracción de los medios</p>
+<blockquote>
+<p>Esta fórmula permite determinar la posición de la imagen formada por
+una superficie esférica refractante.</p>
+</blockquote>
+<hr />
+<h2 id="aumento-lateral-lente">🔹 2. Aumento Lateral Lente</h2>
+<p>El <strong>aumento lateral</strong> <span
+class="math inline">\(m\)</span> está dado por:</p>
+<p><span class="math display">\[
+m = -\frac{n_a \, s&#39;}{n_b \, s}
+\]</span></p>
+<ul>
+<li>Si <span class="math inline">\(m &gt; 0\)</span>, la imagen es
+<strong>derecha</strong></li>
+<li>Si <span class="math inline">\(m &lt; 0\)</span>, la imagen está
+<strong>invertida</strong></li>
+</ul>
+<hr />
+<h2 id="lentes-delgadas">🔹 3. Lentes Delgadas</h2>
+<p>Para <strong>lentes delgadas</strong> en aire, se cumple la
+<strong>ecuación de lentes</strong>:</p>
+<p><span class="math display">\[
+\frac{1}{s} + \frac{1}{s&#39;} = \frac{1}{f}
+\]</span></p>
+<p><strong>Donde:</strong> - <span class="math inline">\(f\)</span>:
+Distancia focal de la lente - <span class="math inline">\(s\)</span>:
+Distancia del objeto a la lente - <span
+class="math inline">\(s&#39;\)</span>: Distancia de la imagen a la
+lente</p>
+<p>El <strong>aumento lateral</strong> en lentes delgadas es:</p>
+<p><span class="math display">\[
+m = \frac{s&#39;}{s}
+\]</span></p>
+<hr />
+<h2 id="ecuación-del-fabricante-lente-delgada">🔹 4. Ecuación del
+Fabricante (Lente Delgada)</h2>
+<p>La <strong>distancia focal</strong> <span
+class="math inline">\(f\)</span> de una lente de índice <span
+class="math inline">\(n\)</span> con radios <span
+class="math inline">\(R_1\)</span> y <span
+class="math inline">\(R_2\)</span> viene dada por:</p>
+<p><span class="math display">\[
+\frac{1}{f} = (n - 1) \left( \frac{1}{R_1} - \frac{1}{R_2} \right)
+\]</span></p>
+<p><strong>Donde:</strong> - <span class="math inline">\(n\)</span>:
+Índice de refracción de la lente - <span class="math inline">\(R_1,
+R_2\)</span>: Radios de curvatura de las superficies</p>
+<blockquote>
+<p>Esta fórmula se usa para <strong>diseñar lentes</strong> y determinar
+su potencia óptica.</p>
+</blockquote>
+<hr />
+<h2 id="resumen-de-fórmulas">🔹 5. Resumen de Fórmulas</h2>
+<table>
+<colgroup>
+<col style="width: 68%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Fórmula</strong></th>
+<th style="text-align: left;"><strong>Aplicación</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><span class="math display">\[\frac{n_a}{s}
++ \frac{n_b}{s&#39;} = \frac{n_b - n_a}{R}\]</span></td>
+<td style="text-align: left;">Superficie esférica refractante</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math display">\[m =
+-\frac{n_a \, s&#39;}{n_b \, s}\]</span></td>
+<td style="text-align: left;">Aumento lateral (superficie)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math display">\[\frac{1}{s} +
+\frac{1}{s&#39;} = \frac{1}{f}\]</span></td>
+<td style="text-align: left;">Lente delgada</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math display">\[m =
+\frac{s&#39;}{s}\]</span></td>
+<td style="text-align: left;">Aumento lateral (lente)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="math display">\[\frac{1}{f} =
+(n-1) \left( \frac{1}{R_1} - \frac{1}{R_2} \right)\]</span></td>
+<td style="text-align: left;">Ecuación del fabricante</td>
+</tr>
+</tbody>
+</table>
+<h1 id="refracción-de-la-luz">📘 Refracción de la Luz</h1>
+<h2 id="índice-de-refracción">🔹 Índice de Refracción</h2>
+<p>El <strong>índice de refracción</strong> <span
+class="math inline">\(n\)</span> de un medio se define como:</p>
+<p><span class="math display">\[
+n = \frac{c}{v}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(c\)</span> = velocidad de la luz en el
+vacío<br />
+- <span class="math inline">\(v\)</span> = velocidad de la luz en el
+medio</p>
+<blockquote>
+<p>En criollo: El índice de refracción te dice cuánto “se frena” la luz
+al entrar en un medio distinto del vacío.</p>
+</blockquote>
+<h2 id="ley-de-refracción-ley-de-snell">🔹 Ley de Refracción (Ley de
+Snell)</h2>
+<p>Cuando un rayo de luz pasa de un medio con índice <span
+class="math inline">\(n_a\)</span> a otro con índice <span
+class="math inline">\(n_b\)</span>, se cumple:</p>
+<p><span class="math display">\[
+n_a \, \sin \theta_a = n_b \, \sin \theta_b
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(\theta_a\)</span> = ángulo de incidencia
+(respecto a la normal)<br />
+- <span class="math inline">\(\theta_b\)</span> = ángulo de
+refracción</p>
+<blockquote>
+<p>En criollo: Si la luz entra de un medio a otro, cambia de dirección.
+Esta ecuación te dice cómo cambia ese ángulo según cuán “denso” es el
+medio.</p>
+</blockquote>
+<h2 id="longitud-de-onda-en-un-medio">🔹 Longitud de onda en un
+medio</h2>
+<p>La longitud de onda de la luz dentro de un medio con índice de
+refracción <span class="math inline">\(n\)</span> se calcula como:</p>
+<p><span class="math display">\[
+\lambda = \frac{\lambda_0}{n}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(\lambda_0\)</span> = longitud de onda en
+el vacío<br />
+- <span class="math inline">\(\lambda\)</span> = longitud de onda en el
+medio</p>
+<blockquote>
+<p>En criollo: La luz se “comprime” dentro del medio: cuanto mayor es
+<span class="math inline">\(n\)</span>, más corta es la longitud de
+onda.</p>
+</blockquote>
+<h1 id="óptica-geométrica---espejos">📘 Óptica Geométrica - Espejos</h1>
+<h2 id="aumento-lateral">🔹 Aumento Lateral</h2>
+<p>El <strong>aumento lateral</strong> <span
+class="math inline">\(m\)</span> se define como:</p>
+<p><span class="math display">\[
+m = \frac{y&#39;}{y}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(y&#39;\)</span> = altura de la
+imagen<br />
+- <span class="math inline">\(y\)</span> = altura del objeto</p>
+<blockquote>
+<p>En criollo: El aumento te dice cuántas veces más grande o más chica
+es la imagen comparada con el objeto.</p>
+</blockquote>
+<h2 id="distancia-focal-de-espejos-esféricos">🔹 Distancia Focal de
+Espejos Esféricos</h2>
+<p>Para <strong>espejos esféricos</strong>, la distancia focal <span
+class="math inline">\(f\)</span> se relaciona con el radio de curvatura
+<span class="math inline">\(r\)</span> mediante:</p>
+<p><span class="math display">\[
+f = \frac{r}{2}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(r\)</span> = radio de curvatura del
+espejo<br />
+- <span class="math inline">\(f\)</span> = distancia focal</p>
+<blockquote>
+<p>En criollo: La distancia focal es justo la mitad del radio de la
+“esfera” que forma el espejo.</p>
+</blockquote>
+<h2 id="espejo-plano">🔹 Espejo Plano</h2>
+<p>Para un <strong>espejo plano</strong>, la relación entre las
+distancias objeto e imagen es:</p>
+<p><span class="math display">\[
+\frac{1}{s} + \frac{1}{s&#39;} = 0
+\]</span></p>
+<p>Y el aumento lateral vale:</p>
+<p><span class="math display">\[
+m = \frac{s&#39;}{s} = 1
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(s\)</span> = distancia del objeto al
+espejo<br />
+- <span class="math inline">\(s&#39;\)</span> = distancia de la imagen
+al espejo</p>
+<blockquote>
+<p>En criollo: En espejos planos, la imagen siempre se forma a la misma
+distancia que el objeto y tiene el mismo tamaño.</p>
+</blockquote>
+<h2 id="ecuación-general-de-espejos">🔹 Ecuación General de Espejos</h2>
+<p>Para <strong>espejos cóncavos y convexos</strong>, se usa la
+ecuación:</p>
+<p><span class="math display">\[
+\frac{1}{s} + \frac{1}{s&#39;} = \frac{1}{f}
+\]</span></p>
+<p>Y el aumento lateral:</p>
+<p><span class="math display">\[
+m = -\frac{s&#39;}{s}
+\]</span></p>
+<p>donde:<br />
+- <span class="math inline">\(f &gt; 0\)</span> para espejos cóncavos
+(convergentes)<br />
+- <span class="math inline">\(f &lt; 0\)</span> para espejos convexos
+(divergentes)</p>
+<blockquote>
+<p>En criollo: Esta ecuación general te sirve para calcular dónde se
+forma la imagen en cualquier tipo de espejo curvo.</p>
+</blockquote>
+<h1 id="procesos-termodinámicos-formulario-completo">⚡ Procesos
+Termodinámicos – Formulario Completo</h1>
+<h2 id="significado-de-las-variables">📌 Significado de las
+Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="math inline">\(p\)</span></td>
+<td>Presión del gas</td>
+</tr>
+<tr>
+<td><span class="math inline">\(V\)</span></td>
+<td>Volumen del gas</td>
+</tr>
+<tr>
+<td><span class="math inline">\(T\)</span></td>
+<td>Temperatura absoluta (Kelvin)</td>
+</tr>
+<tr>
+<td><span class="math inline">\(n\)</span></td>
+<td>Número de moles de gas</td>
+</tr>
+<tr>
+<td><span class="math inline">\(Q\)</span></td>
+<td>Calor intercambiado</td>
+</tr>
+<tr>
+<td><span class="math inline">\(W\)</span></td>
+<td>Trabajo realizado <strong>por</strong> el gas</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\Delta U\)</span></td>
+<td>Cambio en la energía interna</td>
+</tr>
+<tr>
+<td><span class="math inline">\(R\)</span></td>
+<td>Constante universal de los gases (<span class="math inline">\(8.314
+\\, J/(mol·K)\)</span>)</td>
+</tr>
+<tr>
+<td><span class="math inline">\(C_v\)</span></td>
+<td>Capacidad calorífica molar a volumen constante</td>
+</tr>
+<tr>
+<td><span class="math inline">\(C_p\)</span></td>
+<td>Capacidad calorífica molar a presión constante</td>
+</tr>
+<tr>
+<td><span class="math inline">\(\gamma\)</span></td>
+<td>Coeficiente adiabático (<span class="math inline">\(\gamma =
+C_p/C_v\)</span>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nota:</strong> Para gas ideal monoatómico: <span
+class="math inline">\(C_v = \frac{3}{2}R\)</span>, <span
+class="math inline">\(C_p = \frac{5}{2}R\)</span>, <span
+class="math inline">\(\gamma = \frac{5}{3}\)</span></p>
+<hr />
+<h2 id="adiabático">🔹 Adiabático</h2>
+<p><strong>Condición:</strong> <span class="math inline">\(Q =
+0\)</span> (sin intercambio de calor)</p>
+<p><strong>Ecuación característica:</strong> <span
+class="math display">\[p V^{\gamma} = \text{cte}\]</span></p>
+<p><strong>Trabajo:</strong> <span class="math display">\[W = n C_v (T_1
+- T_2)\]</span> <span class="math display">\[W = \frac{1}{\gamma - 1}
+(p_1 V_1 - p_2 V_2)\]</span></p>
+<blockquote>
+<p>👉 <strong>En criollo:</strong> Expansión → se enfría, Compresión →
+se calienta. Todo el trabajo sale/entra a costa de la temperatura.</p>
+</blockquote>
+<hr />
+<h2 id="isocórico-volumen-constante">🔹 Isocórico (Volumen
+constante)</h2>
+<p><strong>Condición:</strong> <span class="math inline">\(V =
+\text{cte}\)</span>, <span class="math inline">\(W = 0\)</span></p>
+<p><strong>Energía interna/Calor:</strong> <span
+class="math display">\[\Delta U = Q = n C_v (T_2 - T_1)\]</span></p>
+<blockquote>
+<p>👉 <strong>En criollo:</strong> Todo el calor va directo a cambiar la
+temperatura. No hay trabajo.</p>
+</blockquote>
+<hr />
+<h2 id="isobárico-presión-constante">🔹 Isobárico (Presión
+constante)</h2>
+<p><strong>Condición:</strong> <span class="math inline">\(p =
+\text{cte}\)</span></p>
+<p><strong>Trabajo:</strong> <span class="math display">\[W = p (V_2 -
+V_1)\]</span></p>
+<p><strong>Calor:</strong> <span class="math display">\[Q = n C_p (T_2 -
+T_1)\]</span></p>
+<blockquote>
+<p>👉 <strong>En criollo:</strong> El calor se reparte: parte aumenta
+temperatura y parte hace trabajo.</p>
+</blockquote>
+<hr />
+<h2 id="isotérmico-temperatura-constante">🔹 Isotérmico (Temperatura
+constante)</h2>
+<p><strong>Condición:</strong> <span class="math inline">\(T =
+\text{cte}\)</span>, <span class="math inline">\(\Delta U =
+0\)</span></p>
+<p><strong>Ecuación:</strong> <span class="math inline">\(pV =
+\text{cte}\)</span></p>
+<p><strong>Trabajo y Calor:</strong> <span class="math display">\[W =
+nRT \ln \frac{V_2}{V_1}\]</span> <span class="math display">\[Q =
+W\]</span></p>
+<blockquote>
+<p>👉 <strong>En criollo:</strong> Todo el calor que entra se convierte
+en trabajo.</p>
+</blockquote>
+<hr />
+<h2 id="resumen-ultra-rápido">📌 Resumen Ultra Rápido</h2>
+<table>
+<thead>
+<tr>
+<th>Proceso</th>
+<th>Condición</th>
+<th>Relación <span class="math inline">\(Q\)</span>-<span
+class="math inline">\(W\)</span>-<span class="math inline">\(\Delta
+U\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Adiabático</strong></td>
+<td><span class="math inline">\(Q=0\)</span></td>
+<td><span class="math inline">\(W = -\Delta U\)</span></td>
+</tr>
+<tr>
+<td><strong>Isocórico</strong></td>
+<td><span class="math inline">\(V=\text{cte}\)</span></td>
+<td><span class="math inline">\(Q = \Delta U\)</span>, <span
+class="math inline">\(W=0\)</span></td>
+</tr>
+<tr>
+<td><strong>Isobárico</strong></td>
+<td><span class="math inline">\(p=\text{cte}\)</span></td>
+<td><span class="math inline">\(Q = \Delta U + W\)</span></td>
+</tr>
+<tr>
+<td><strong>Isotérmico</strong></td>
+<td><span class="math inline">\(T=\text{cte}\)</span></td>
+<td><span class="math inline">\(Q = W\)</span>, <span
+class="math inline">\(\Delta U=0\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="recordatorio-importante">💡 Recordatorio importante</h2>
+<ul>
+<li><span class="math inline">\(W &gt; 0\)</span>: Gas se EXPANDE (hace
+trabajo)</li>
+<li><span class="math inline">\(W &lt; 0\)</span>: Gas se COMPRIME
+(recibe trabajo)</li>
+<li><span class="math inline">\(Q &gt; 0\)</span>: Calor ENTRA al
+sistema</li>
+<li><span class="math inline">\(Q &lt; 0\)</span>: Calor SALE del
+sistema</li>
+</ul>
+<p><span class="math display">\[
+\text{1. Ángulo crítico:} \quad
+\sin \theta_\text{crítico} = \frac{n_b}{n_a}, \quad n_a &gt; n_b
+\]</span> - <span class="math inline">\(\theta_\text{crítico}\)</span>:
+es el ángulo mínimo donde la luz deja de pasar al otro medio y se
+refleja toda. - <span class="math inline">\(n_a\)</span>: índice de
+refracción del medio donde viene la luz (por ejemplo, vidrio). - <span
+class="math inline">\(n_b\)</span>: índice de refracción del medio al
+que va la luz (por ejemplo, aire).</p>
+<p><span class="math display">\[
+\text{2. Ley de Malus:} \quad
+I = I_\text{max} \cos^2 \phi
+\]</span> - <span class="math inline">\(I\)</span>: intensidad de la luz
+que sale del polarizador. - <span
+class="math inline">\(I_\text{max}\)</span>: intensidad máxima de la luz
+que entra. - <span class="math inline">\(\phi\)</span>: ángulo entre la
+dirección de la luz polarizada y el polarizador.<br />
+En criollo: si la luz va en la misma dirección que el polarizador, pasa
+toda; si está perpendicular, no pasa nada.</p>
+<p><span class="math display">\[
+\text{3. Ley de Brewster:} \quad
+\tan \theta_\text{p} = \frac{n_b}{n_a}
+\]</span> - <span class="math inline">\(\theta_\text{p}\)</span>: ángulo
+de Brewster, donde la luz reflejada queda totalmente polarizada. - <span
+class="math inline">\(n_a\)</span>: índice de refracción del primer
+medio (de donde viene la luz). - <span
+class="math inline">\(n_b\)</span>: índice de refracción del segundo
+medio (hacia donde va la luz).<br />
+En criollo: si apuntás la luz en este ángulo, la luz que rebota queda
+toda “alineada” en un solo plano.</p>
+<h1 id="refrigeradores-y-entropía">📘 Refrigeradores y Entropía</h1>
+<h2 id="coeficiente-de-rendimiento-de-un-refrigerador">🔹 Coeficiente de
+Rendimiento de un Refrigerador</h2>
+<p>El <strong>coeficiente de rendimiento</strong> (<span
+class="math inline">\(K\)</span>) de un refrigerador mide su eficiencia
+al extraer calor del compartimento frío utilizando trabajo. Se define
+como:</p>
+<p><span class="math display">\[
+K = \frac{Q_c}{|W|} = \frac{Q_c}{Q_h - Q_c}
+\]</span></p>
+<p><strong>Explicación en lenguaje claro:</strong> - <span
+class="math inline">\(Q_c\)</span>: calor extraído del interior frío (lo
+que “enfría”) - <span class="math inline">\(Q_h\)</span>: calor liberado
+al ambiente exterior (lo que “calienta”)<br />
+- <span class="math inline">\(W\)</span>: trabajo realizado por el motor
+del refrigerador - <span class="math inline">\(K\)</span> indica:
+<em>“Por cada unidad de trabajo invertido, cuántas unidades de calor se
+logran extraer del interior frío”</em></p>
+<hr />
+<h2 id="entropía-en-un-proceso-reversible">🔹 Entropía en un Proceso
+Reversible</h2>
+<p>La <strong>entropía</strong> (<span class="math inline">\(S\)</span>)
+cuantifica el grado de desorden de un sistema. Para un <strong>proceso
+reversible</strong>:</p>
+<p><span class="math display">\[
+\Delta S = S_2 - S_1 = \int_1^2 \frac{\delta Q_{\text{rev}}}{T}
+\]</span></p>
+<p><strong>Explicación en lenguaje claro:</strong> - <span
+class="math inline">\(\delta Q_{\text{rev}}\)</span>: calor
+intercambiado de manera reversible, sin pérdidas por irreversibilidades
+- <span class="math inline">\(T\)</span>: temperatura absoluta del
+sistema en cada instante - La integral suma las contribuciones
+infinitesimales de calor divididas por la temperatura - Si <span
+class="math inline">\(\Delta S = 0\)</span>, el proceso es perfectamente
+reversible</p>
+<hr />
+<h2 id="expresión-microscópica-de-la-entropía">🔹 Expresión Microscópica
+de la Entropía</h2>
+<p>Desde una <strong>perspectiva microscópica</strong>, la entropía se
+relaciona con el número de configuraciones posibles:</p>
+<p><span class="math display">\[
+S = k \ln W
+\]</span></p>
+<p><strong>Explicación en lenguaje claro:</strong> - <span
+class="math inline">\(k\)</span>: constante de Boltzmann - <span
+class="math inline">\(W\)</span>: número de microestados posibles
+compatibles con un macroestado dado - <em>“Cuantas más formas haya de
+organizar las partículas, mayor será el desorden y la entropía”</em></p>
+<hr />
+<h2 id="notas-adicionales">🔹 Notas Adicionales</h2>
+<ul>
+<li>En un refrigerador ideal y reversible, la <strong>entropía
+total</strong> del sistema + entorno permanece constante</li>
+<li>El coeficiente <span class="math inline">\(K\)</span> mejora cuando
+la diferencia <span class="math inline">\(T_h - T_c\)</span> es
+menor</li>
+<li>La entropía explica por qué un refrigerador no puede enfriar sin
+consumir trabajo: siempre existe un <strong>aumento neto de
+entropía</strong> que compensar</li>
+</ul>
+<h1
+id="segunda-ley-de-la-termodinámica---eficiencia-de-máquinas-térmicas">📘
+Segunda Ley de la Termodinámica - Eficiencia de Máquinas Térmicas</h1>
+<h2 id="definición-de-eficiencia">🔹 Definición de Eficiencia</h2>
+<p>La <strong>eficiencia</strong> <span
+class="math inline">\(\eta\)</span> de una máquina térmica se define
+como:</p>
+<p><span class="math display">\[
+\eta = \frac{W}{Q_h} = \frac{Q_h - |Q_c|}{Q_h} = 1 - \frac{|Q_c|}{Q_h}
+\]</span></p>
+<p><strong>Donde:</strong> - <span class="math inline">\(\eta\)</span>:
+Eficiencia de la máquina térmica (adimensional, <span
+class="math inline">\(0 \leq \eta &lt; 1\)</span>) - <span
+class="math inline">\(W\)</span>: Trabajo neto realizado por la máquina
+<span class="math inline">\(J\)</span> - <span
+class="math inline">\(Q_h\)</span>: Calor suministrado por la fuente
+caliente <span class="math inline">\(J\)</span> - <span
+class="math inline">\(Q_c\)</span>: Calor expulsado a la fuente fría
+<span class="math inline">\(J\)</span>, se usa valor absoluto <span
+class="math inline">\(|Q_c|\)</span></p>
+<p><strong>🤔 Explicación en criollo:</strong> La eficiencia te dice qué
+tan buena es una máquina para convertir el calor que recibe en trabajo
+útil. Si fuera 100%, significaría que toda la energía del combustible se
+convierte en trabajo, pero en la realidad siempre se pierde algo de
+calor.</p>
+<hr />
+<h2 id="relación-fundamental">🔹 Relación Fundamental</h2>
+<p>El <strong>trabajo neto</strong> está relacionado con los calores
+mediante:</p>
+<p><span class="math display">\[
+W = Q_h + Q_c
+\]</span></p>
+<p>Dado que <span class="math inline">\(Q_c &lt; 0\)</span> (calor
+expulsado), también podemos escribir:</p>
+<p><span class="math display">\[
+W = Q_h - |Q_c|
+\]</span></p>
+<p><strong>🤔 Explicación en criollo:</strong> Es como un balance de
+energía: el calor que entra <span class="math inline">\(Q_h\)</span> se
+reparte entre el trabajo útil que obtenemos <span
+class="math inline">\(W\)</span> y el calor que se escapa o se pierde
+<span class="math inline">\(Q_c\)</span>. Por eso el trabajo siempre es
+menor que el calor que le metés a la máquina.</p>
+<hr />
+<h2 id="eficiencia-de-carnot-límite-máximo-teórico">🔹 Eficiencia de
+Carnot (Límite Máximo Teórico)</h2>
+<p>Para cualquier máquina térmica que opere entre dos temperaturas:</p>
+<p><span class="math display">\[
+\eta_{\text{Carnot}} = 1 - \frac{T_c}{T_h}
+\]</span></p>
+<p><strong>Donde:</strong> - <span class="math inline">\(T_h\)</span>:
+Temperatura de la fuente caliente <span class="math inline">\(K\)</span>
+- <span class="math inline">\(T_c\)</span>: Temperatura de la fuente
+fría <span class="math inline">\(K\)</span></p>
+<p><strong>Condiciones:</strong> - Temperaturas en Kelvin - Máquina
+reversible (ideal) - Procesos cuasi-estáticos</p>
+<p><strong>🤔 Explicación en criollo:</strong> Esta es la eficiencia
+máxima que podría tener una máquina perfecta que no existe en la
+realidad. Te dice que cuanto más caliente esté la fuente de calor y más
+fría esté la fuente de enfriamiento, mejor puede ser la eficiencia. Pero
+nunca podrá ser del 100% a menos que la fuente fría esté al cero
+absoluto (-273°C), lo cual es imposible.</p>
+<hr />
+<h2 id="comparación-con-máquinas-reales">🔹 Comparación con Máquinas
+Reales</h2>
+<p>Para máquinas reales (irreversibles):</p>
+<p><span class="math display">\[
+\eta_{\text{real}} = \eta_{\text{Carnot}} \times \eta_{\text{interna}}
+&lt; \eta_{\text{Carnot}}
+\]</span></p>
+<p><strong>Factores que reducen la eficiencia real:</strong> - Fricción
+en partes móviles - Pérdidas de calor por aislamiento imperfecto -
+Turbulencias y resistencias fluidodinámicas - Procesos de combustión
+incompletos</p>
+<p><strong>🤔 Explicación en criollo:</strong> Las máquinas de verdad
+siempre son menos eficientes que la máquina ideal de Carnot porque
+tienen pérdidas por rozamiento, el calor se escapa por las paredes, y
+nada es perfecto. Por eso un motor de auto tiene eficiencias del 20-30%,
+no del 60-70% que teóricamente podría tener.</p>
+<hr />
+<h2 id="limitaciones-de-la-segunda-ley">🔹 Limitaciones de la Segunda
+Ley</h2>
+<p><strong>La eficiencia nunca puede alcanzar el 100%:</strong></p>
+<p><span class="math display">\[
+\eta &lt; 1
+\]</span></p>
+<p><strong>Razón física:</strong> Siempre existe calor expulsado <span
+class="math inline">\(|Q_c| &gt; 0\)</span>, por lo que:</p>
+<p><span class="math display">\[
+\frac{|Q_c|}{Q_h} &gt; 0 \quad \Rightarrow \quad \eta = 1 -
+\frac{|Q_c|}{Q_h} &lt; 1
+\]</span></p>
+<p><strong>Para mejorar la eficiencia:</strong> Minimizar <span
+class="math inline">\(|Q_c|\)</span> respecto a <span
+class="math inline">\(Q_h\)</span>.</p>
+<p><strong>🤔 Explicación en criollo:</strong> La naturaleza es así: no
+podés construir una máquina que convierta todo el calor en trabajo.
+Siempre tiene que botar algo de calor al ambiente. Es como una ley
+fundamental del universo - nada es gratis en términos de energía.</p>
+<hr />
+<p><strong>💡 Conclusión:</strong> La segunda ley establece un límite
+fundamental a la eficiencia de las máquinas térmicas, haciendo imposible
+el motor de movimiento perpetuo. La eficiencia de Carnot representa el
+mejor caso posible, mientras que las máquinas reales operan por debajo
+de este límite debido a irreversibilidades.</p>
+</body>
+</html>

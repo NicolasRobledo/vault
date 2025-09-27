@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>conduccion</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<h1 id="transferencia-de-calor">📘 Transferencia de Calor</h1>
+<p>La <strong>transferencia de calor</strong> es el movimiento de
+energía térmica de un cuerpo a otro. Puede ocurrir de tres formas:
+<strong>conducción, convección y radiación</strong>.</p>
+<hr />
+<h2 id="conducción-por-contacto">🔹 1. Conducción (por contacto)</h2>
+<p>La <strong>conducción</strong> es el flujo de calor a través de un
+material <strong>sin que el material se mueva</strong>, debido a una
+diferencia de temperatura.</p>
+<p><strong>Ley de Fourier:</strong></p>
+<p><span class="math display">
+q = -k \, A \, \frac{dT}{dx}
+</span></p>
+<p>o para una barra de longitud <span class="math inline">L</span> y
+temperatura lineal:</p>
+<p><span class="math display">
+Q = k \, A \, \frac{T_1 - T_2}{L} \, \Delta t
+</span></p>
+<p>donde:<br />
+- <span class="math inline">q</span> = flujo de calor (W)<br />
+- <span class="math inline">Q</span> = calor transferido (J)<br />
+- <span class="math inline">k</span> = conductividad térmica
+(W/m·K)<br />
+- <span class="math inline">A</span> = área transversal (m²)<br />
+- <span class="math inline">T_1, T_2</span> = temperaturas de los
+extremos (K o °C)<br />
+- <span class="math inline">L</span> = longitud del material (m)</p>
+<blockquote>
+<p><strong>En criollo:</strong> El calor se pasa de una parte caliente a
+una fría, como cuando apoyás la mano en un metal caliente.</p>
+</blockquote>
+<hr />
+<h2 id="convección-por-movimiento-de-fluidos">🔹 2. Convección (por
+movimiento de fluidos)</h2>
+<p>La <strong>convección</strong> ocurre cuando el calor se transfiere
+<strong>a través de un fluido (líquido o gas) en
+movimiento</strong>.</p>
+<p><strong>Ley de enfriamiento de Newton:</strong></p>
+<p><span class="math display">
+q = h \, A \, (T_s - T_\infty)
+</span></p>
+<p>donde:<br />
+- <span class="math inline">q</span> = flujo de calor (W)<br />
+- <span class="math inline">h</span> = coeficiente de convección
+(W/m²·K)<br />
+- <span class="math inline">A</span> = área de la superficie (m²)<br />
+- <span class="math inline">T_s</span> = temperatura de la superficie (K
+o °C)<br />
+- <span class="math inline">T_\infty</span> = temperatura del fluido
+lejos de la superficie (K o °C)</p>
+<blockquote>
+<p><strong>En criollo:</strong> El calor se lleva el fluido, como el
+aire caliente que sube de un radiador o agua hirviendo que se mueve.</p>
+</blockquote>
+<hr />
+<h2 id="radiación-transferencia-por-ondas">🔹 3. Radiación
+(transferencia por ondas)</h2>
+<p>La <strong>radiación térmica</strong> es la transferencia de calor
+mediante <strong>ondas electromagnéticas</strong>, sin necesidad de
+contacto ni medio material.</p>
+<p><strong>Ley de Stefan-Boltzmann:</strong></p>
+<p><span class="math display">
+q = \epsilon \, \sigma \, A \, (T_s^4 - T_\text{amb}^4)
+</span></p>
+<p>donde:<br />
+- <span class="math inline">q</span> = flujo de calor (W)<br />
+- <span class="math inline">\epsilon</span> = emisividad de la
+superficie (0 ≤ ε ≤ 1)<br />
+- <span class="math inline">\sigma</span> = constante de
+Stefan-Boltzmann (<span class="math inline">5.67 \times 10^{-8}</span>
+W/m²·K⁴)<br />
+- <span class="math inline">A</span> = área de la superficie (m²)<br />
+- <span class="math inline">T_s</span> = temperatura de la superficie
+(K)<br />
+- <span class="math inline">T_\text{amb}</span> = temperatura ambiente
+(K)</p>
+<blockquote>
+<p><strong>En criollo:</strong> El calor se manda por “luz infrarroja”,
+como el calor que sentís de un fuego sin tocarlo.</p>
+</blockquote>
+<hr />
+<h2 id="resumen-de-mecanismos">🔹 Resumen de mecanismos</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 21%" />
+<col style="width: 29%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr>
+<th>Mecanismo</th>
+<th>Medio necesario</th>
+<th>Forma de transferencia</th>
+<th>Ejemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conducción</td>
+<td>Sólido</td>
+<td>Por contacto directo</td>
+<td>Mano en metal caliente</td>
+</tr>
+<tr>
+<td>Convección</td>
+<td>Líquido o gas</td>
+<td>Movimiento del fluido</td>
+<td>Aire calentado por un radiador</td>
+</tr>
+<tr>
+<td>Radiación</td>
+<td>No necesita medio</td>
+<td>Ondas electromagnéticas</td>
+<td>Sol calentando la Tierra</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

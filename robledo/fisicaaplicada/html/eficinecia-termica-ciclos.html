@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>eficinecia-termica-ciclos</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+</head>
+<body>
+<h2 id="fórmulas-de-eficiencia-térmica-y-ciclos">🔹 Fórmulas de
+eficiencia térmica y ciclos</h2>
+<p><strong>Ciclo Otto (gas ideal):</strong><br />
+<span class="math display">
+\eta_{\text{Otto}} = 1 - \frac{1}{r^{\gamma - 1}}
+</span></p>
+<p><strong>Refrigerador (coeficiente de desempeño <span
+class="math inline">K</span>):</strong><br />
+<span class="math display">
+K = \frac{|Q_C|}{|W|} = \frac{|Q_C|}{Q_H - Q_C}
+</span></p>
+<p><strong>Ciclo Carnot (eficiencia):</strong><br />
+<span class="math display">
+\eta_{\text{Carnot}} = 1 - \frac{T_C}{T_H} = \frac{T_H - T_C}{T_H}
+</span></p>
+<p><span class="math display">
+\frac{Q_C}{Q_H} = \frac{T_C}{T_H}
+</span> ### 📋 Tabla de Variables</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 81%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Variable</th>
+<th style="text-align: left;">Significado en Criollo</th>
+<th style="text-align: left;">Unidades Típicas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\eta</span></strong> (eta)</td>
+<td style="text-align: left;"><strong>Eficiencia térmica:</strong> Qué
+porcentaje del calor que le metés a la máquina se convierte en trabajo
+útil.</td>
+<td style="text-align: left;">Sin unidades (o %)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">r</span></strong></td>
+<td style="text-align: left;"><strong>Relación de compresión:</strong>
+Cuántas veces más grande es el volumen cuando el pistón está abajo
+(<span class="math inline">V_{\text{máx}}</span>) comparado con cuando
+está arriba (<span class="math inline">V_{\text{mín}}</span>).</td>
+<td style="text-align: left;">Sin unidades</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">\gamma</span></strong> (gamma)</td>
+<td style="text-align: left;"><strong>Coeficiente adiabático:</strong>
+Una medida de cómo se comporta el gas cuando se comprime o expande sin
+perder calor. Para el aire es ~1.4.</td>
+<td style="text-align: left;">Sin unidades</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">K</span></strong></td>
+<td style="text-align: left;"><strong>Coeficiente de desempeño:</strong>
+Cuán “bueno” es el refrigerador para mover calor.</td>
+<td style="text-align: left;">Sin unidades</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">Q_H</span></strong></td>
+<td style="text-align: left;"><strong>Calor absorbido del foco
+caliente:</strong> El calor que le metés a la máquina (ej: de la
+combustión).</td>
+<td style="text-align: left;">Joules (J)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">Q_C</span></strong></td>
+<td style="text-align: left;"><strong>Calor cedido al foco
+frío:</strong> El calor que la máquina bota al ambiente (ej: por el
+radiador).</td>
+<td style="text-align: left;">Joules (J)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">W</span></strong></td>
+<td style="text-align: left;"><strong>Trabajo neto:</strong> El “laburo”
+útil que la máquina entrega.</td>
+<td style="text-align: left;">Joules (J)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">T_H</span></strong></td>
+<td style="text-align: left;"><strong>Temperatura de la fuente
+caliente:</strong> Temperatura de donde la máquina toma el calor.</td>
+<td style="text-align: left;">Kelvin (K)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><span
+class="math inline">T_C</span></strong></td>
+<td style="text-align: left;"><strong>Temperatura de la fuente
+fría:</strong> Temperatura a la que la máquina bota el calor
+residual.</td>
+<td style="text-align: left;">Kelvin (K)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>💡 Nota:</strong> En las fórmulas de Carnot,
+<strong>SIEMPRE</strong> usá la temperatura en Kelvin (K).</p>
+</blockquote>
+</body>
+</html>
