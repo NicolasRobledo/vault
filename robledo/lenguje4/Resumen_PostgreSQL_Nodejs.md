@@ -11,20 +11,15 @@ sudo -u postgres psql
 ### Crear usuario y base de datos
 
 ```sql
+-- Crear base de datos
+CREATE DATABASE testdb;
+
+-- Crear usuario
 CREATE USER miusuario WITH PASSWORD 'mipassword';
-CREATE DATABASE testdb OWNER miusuario;
-\q
-```
 
-### Conectarse con el nuevo usuario
+-- Conectar a la base de datos
+\c testdb
 
-```bash
-psql -U miusuario -d testdb -W
-```
-
-### Crear tabla y permisos
-
-```sql
 -- Crear tabla
 CREATE TABLE comentario (
     id SERIAL PRIMARY KEY,
@@ -32,16 +27,16 @@ CREATE TABLE comentario (
     fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Insertar datos de prueba
-INSERT INTO comentario (texto) VALUES ('Hola mundo');
-
--- Dar permisos
+-- Conceder permisos (ESTOS 3 COMANDOS SON CLAVE)
 GRANT ALL PRIVILEGES ON TABLE comentario TO miusuario;
-GRANT ALL PRIVILEGES ON SEQUENCE comentario_id_seq TO miusuario;
+GRANT USAGE, SELECT ON SEQUENCE comentario_id_seq TO miusuario;
+GRANT USAGE ON SCHEMA public TO miusuario;
 
--- Verificar
-SELECT * FROM comentario;
-\dp comentario
+-- Verificar que todo está bien
+\z comentario
+
+-- Salir
+\q
 ```
 
 ## 3. Código Node.js final (`app.js`)
@@ -53,7 +48,7 @@ const { Pool } = require('pg');
 const app = express();
 const port = 3000;
 
-// ✅ 1. AGREGAR ESTO: Para poder recibir JSON en POST
+// Para poder recibir JSON en POST
 app.use(express.json());
 
 const pool = new Pool({
@@ -70,11 +65,10 @@ app.get('/comentarios', async (req, res) => {
     res.json(result.rows);
   } catch (err) {
     console.log('Error:', err.message);
-    res.status(500).json({error: err.message});
+    res.status(500).json({ error: err.message });
   }
 });
 
-// ✅ 2. AGREGAR ESTA RUTA POST:
 app.post('/comentarios', async (req, res) => {
   try {
     const { texto } = req.body;
@@ -87,13 +81,15 @@ app.post('/comentarios', async (req, res) => {
       comentario: result.rows[0] 
     });
   } catch (err) {
-    res.status(500).json({error: err.message});
+    res.status(500).json({ error: err.message });
   }
 });
 
-app.listen(port, () => {
-  console.log(`Servidor en http://localhost:${port}`);
+// Iniciar servidor en 0.0.0.0
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Servidor iniciado en http://0.0.0.0:${port}`);
 });
+
 
 ```
 
@@ -107,18 +103,73 @@ npm install express pg
 node app.js
 ```
 
-## 5. Probar endpoints
 
-- **GET:** `http://localhost:3000/comentarios`
-- **POST:** `http://localhost:3000/comentarios` (JSON: `{"texto": "Mi comentario"}`)
-# 6.hacer un post
+# Documentación de la API de Comentarios
+
+## Base URL
+
+La base pública de la API es:
+
+```
+http://186.123.108.73:3000/comentarios
+```
+
+## Endpoints disponibles
+
+### 1. Obtener todos los comentarios
+
+- **Método:** `GET`
+- **URL:** `/comentarios`
+- **Descripción:** Obtiene todos los comentarios existentes.
+- **Respuesta ejemplo:**
+
+```json
+[
+  {"texto":"Comentario desde otra máquina","fecha":"2025-09-27T17:36:46.522Z"}
+]
+```
+
+### 2. Crear un nuevo comentario
+
+- **Método:** `POST`
+- **URL:**` http://186.123.108.73:3000/comentarios`
+- **Descripción:** Agrega un comentario nuevo a la base de datos.
+- **Cuerpo de la petición (JSON):**
+
+```json
+{
+  "texto": "Mi comentario"
+}
+```
+
+- **Respuesta ejemplo:**
+
+```json
+{
+  "mensaje": "Comentario agregado",
+  "comentario": {
+    "texto": "Mi comentario",
+    "fecha": "2025-09-27T17:36:46.522Z"
+  }
+}
+```
+
+### 3. Probar endpoints
+
+- **GET:** `http://186.123.108.73:3000/comentarios`
+- **POST:** `http://186.123.108.73:3000/comentarios` (JSON: `{"texto": "Mi comentario"}`)
+
+### 4. Hacer un POST desde terminal
+
 ```bash
 # Instalar curl
 sudo apt install curl
+```
 
-# Una vez instalado, usa tu comando:
-curl -X POST http://localhost:3000/comentarios \
+```bash
+# Enviar comentario
+curl -X POST http://186.123.108.73:3000/comentarios \
   -H "Content-Type: application/json" \
-  -d '{"texto": "Comentario desde terminal"}'
+  -d '{"texto": "Hola Mundo"}'
 
 ```
