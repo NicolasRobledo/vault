@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP4 - Sistemas Operativos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="#">TP4 - Sistemas Operativos</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card mb-4">
+    <div class="card-body">
+      <h1 class="card-title">Universidad Católica de Salta</h1>
+      <h5 class="card-subtitle mb-2 text-muted">Facultad de Ingeniería - Ingeniería en Informática</h5>
+      <p class="card-text">
+        Cátedra de Sistemas Operativos – Año 2025<br>
+        Trabajo Práctico N° 4
+        Docente: TOLABA MIGUEL NÉSTOR
+      </p>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4>Integrantes:</h4>
+      <p>Yurquina Rubén Antonio - DNI 42706057</p>
+      <p>Callapa Braian Rafael  - DNI 44327755</p>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4>Descripción:</h4>
+      <p>Este TP consiste en implementar un servidor web LAMP en Debian 13, publicando un sitio propio accesible en red local e Internet. Se realizan pruebas de acceso concurrente y descarga de archivos grandes, documentando el proceso completo.</p>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4>Contenido dinámico</h4>
+      <p>Número de clics: <span id="clicks">0</span></p>
+      <button class="btn btn-primary" id="btnClick">Hazme click</button>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4>Descargar ISO de Debian 13</h4>
+      <p>Puedes descargar la ISO de prueba para cargas intensivas:</p>
+      <a class="btn btn-primary" href="/debian-13.1.0-amd64-netinst.iso" download>Descargar ISO Debian 13.1</a>
+    </div>
+  </div>
+
+  <div class="card mb-4">
+    <div class="card-body">
+      <h4>Documentación del proceso</h4>
+      <ul>
+        <li>Actualización de sistema: <code>sudo apt update && sudo apt upgrade -y</code></li>
+        <li>Instalación de Apache: <code>sudo apt install apache2 -y</code></li>
+        <li>Archivos servidos desde: <code>/var/www/html/</code></li>
+        <li>Archivo ISO descargado con: <code>wget -c &lt;URL_ISO&gt;</code></li>
+        <li>Permisos del ISO: <code>sudo chown www-data:www-data &lt;ISO&gt;</code> y <code>sudo chmod 0644 &lt;ISO&gt;</code></li>
+        <li>Acceso al sitio local: <code>http://localhost</code></li>
+        <li>Acceso desde red local: <code>http://192.168.1.7</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS y Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

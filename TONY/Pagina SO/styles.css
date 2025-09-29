@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-subtitle {
+  font-style: italic;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
