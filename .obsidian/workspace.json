@@ -11,14 +11,12 @@
             "id": "d54038b11136489b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Requerimientos.md",
-                "mode": "source",
-                "source": false
+                "file": "TONY/Lenguajes4/Pasted image 20250930093133.png"
               },
-              "icon": "lucide-file",
-              "title": "Requerimientos"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250930093133"
             }
           }
         ]
@@ -169,10 +167,12 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "d54038b11136489b",
+  "active": "a2c608163f2d9893",
   "lastOpenFiles": [
-    "TONY/Proyecto de Lenguajes/Diseño.md",
+    "TONY/Lenguajes4/BDD.md",
+    "TONY/Lenguajes4/Pasted image 20250930093133.png",
     "Requerimientos.md",
+    "TONY/Proyecto de Lenguajes/Diseño.md",
     "robledo/lenguje4/Resumen_PostgreSQL_Nodejs.md",
     "TONY/Proyecto de Lenguajes",
     "TONY/SIST2-BOBEDA/Tipos de Software/Software en Linea.md",
@@ -201,7 +201,6 @@
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916174443.png",
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916164934.png",
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916164704.png",
-    "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916164021.png",
     "TONY/SIST2-BOBEDA/Conceptos Basicos/Software.md",
     "TONY/SIST2-BOBEDA/Ciclos de vida/Modelos de Ciclo de Vida.md",
     "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Prototipo Alternativo.md",
@@ -209,7 +208,6 @@
     "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Paralelo.md",
     "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Espiral.md",
     "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Clásico.md",
-    "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Clásico Alternativo.md",
     "TONY/SIST2-BOBEDA/Imagenes",
     "TONY/SIST2-BOBEDA/Conceptos Basicos",
     "TONY/SIST2-BOBEDA/Ciclos de vida",
