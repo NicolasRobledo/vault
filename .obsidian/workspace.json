@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d54038b11136489b",
+            "id": "b28074ccb71e6ab8",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "TONY/Lenguajes4/Pasted image 20250930093133.png"
+                "file": "robledo/lenguje4/Resumen_PostgreSQL_Nodejs.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250930093133"
+              "icon": "lucide-file",
+              "title": "Resumen_PostgreSQL_Nodejs"
             }
           }
         ]
@@ -42,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -76,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 287.5
   },
   "right": {
     "id": "c42e506aca7de907",
@@ -158,39 +160,50 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
-  "active": "a2c608163f2d9893",
+  "active": "b28074ccb71e6ab8",
   "lastOpenFiles": [
     "TONY/Lenguajes4/BDD.md",
     "TONY/Lenguajes4/Pasted image 20250930093133.png",
-    "Requerimientos.md",
-    "TONY/Proyecto de Lenguajes/Diseño.md",
+    "robledo/clasificacion-software.md",
     "robledo/lenguje4/Resumen_PostgreSQL_Nodejs.md",
+    "robledo/crisis.md",
+    "robledo/evolucion-software.md",
+    "robledo/historia-ing-software.md",
+    "robledo/ingenieria.md",
+    "robledo/ingenieria-software.md",
+    "robledo/script-generador-svg.md",
+    "robledo/introduccion.md",
+    "robledo/software-segun-registro.md",
+    "robledo/sofware-segun-utilidad.md",
+    "robledo/Untitled.md",
+    "TONY/Proyecto de Lenguajes/Diseño.md",
+    "Lista de Eventos.md",
+    "Requerimientos.md",
+    "TONY/LENG4-BOBEDA/18sep Practica.md",
+    "TONY/LENG4-BOBEDA/Apunte lenguajes iv.md",
+    "TONY/LENG4-BOBEDA/uso de ract.md",
+    "robledo/lenguje4/comparacion_modelos-tabla.md",
     "TONY/Proyecto de Lenguajes",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software en Linea.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software de Utilitarios.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software de Sistemas.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software de IA.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software de Gestión.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software Por Lotes.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software En Tiempo Real.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software Empotrado.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Software Científico.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Momento de Registro.md",
-    "TONY/SIST2-BOBEDA/Tipos de Software/Hambito de Aplicación.md",
+    "TONY/Pagina SO/styles.css",
+    "TONY/Pagina SO/script.js",
+    "TONY/Pagina SO/index.html",
+    "TONY/Pagina SO",
+    "TONY/Lenguajes4",
+    "robledo/lenguje4/ejemplo-modelo-dinamico.md",
+    "robledo/lenguje4/Untitled.md",
+    "robledo/fisicaaplicada/gas-ideal.md",
+    "robledo/fisicaaplicada/lentes.md",
+    "robledo/fisicaaplicada/luz.md",
     "TONY/SIST2-BOBEDA/Tipos de Software",
-    "TONY/SIST2-BOBEDA/Ingenieria de Software/Proceso de Construcción de Software.md",
-    "TONY/SIST2-BOBEDA/Ingenieria de Software/Ingeniería de Software.md",
-    "TONY/SIST2-BOBEDA/Ingenieria de Software/Crisis del Software.md",
-    "TONY/SIST2-BOBEDA/Ingenieria de Software/Clasificación del Software.md",
     "TONY/SIST2-BOBEDA/Ingenieria de Software",
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916174844.png",
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916174759.png",
@@ -201,19 +214,7 @@
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916174443.png",
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916164934.png",
     "TONY/SIST2-BOBEDA/Imagenes/Pasted image 20250916164704.png",
-    "TONY/SIST2-BOBEDA/Conceptos Basicos/Software.md",
-    "TONY/SIST2-BOBEDA/Ciclos de vida/Modelos de Ciclo de Vida.md",
-    "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Prototipo Alternativo.md",
-    "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Prototipación.md",
-    "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Paralelo.md",
-    "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Espiral.md",
-    "TONY/SIST2-BOBEDA/Ciclos de vida/Ciclo de Vida Clásico.md",
     "TONY/SIST2-BOBEDA/Imagenes",
-    "TONY/SIST2-BOBEDA/Conceptos Basicos",
-    "TONY/SIST2-BOBEDA/Ciclos de vida",
-    "TONY/SIST2-BOBEDA",
-    "TONY/LENG4-BOBEDA",
-    "TONY/HyS-BOBEDA/Imagenes",
-    "TONY/HyS-BOBEDA/HIGIENE Y SEGURIDAD 2025.docx"
+    "TONY/SIST2-BOBEDA/Conceptos Basicos"
   ]
 }
