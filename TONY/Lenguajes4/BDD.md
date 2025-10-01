@@ -1,46 +1,54 @@
 ## Modelado
 
-1. Usuario:
-id_usuario (PK) 
-nombre 
-apellido 
-email (único) 
-contraseña (hash) 
-teléfono 
-tipo_usuario (ENUM: ‘cliente’, ‘operador’, ‘admin’) 
-
-2. Habitación:
-id_habitacion (PK) 
-numero (único) 
-tipo (single, doble, suite, etc.) 
-capacidad precio_noche 
-estado (ENUM: ‘disponible’, ‘ocupada’, ‘mantenimiento’, ‘cerrada’) 
-descripcion 
-
-3. Reserva: 
-id_reserva (PK) 
-id_usuario (FK → Usuario) 
-id_habitacion (FK → Habitación) 
-fecha_inicio fecha_fin 
-estado (ENUM: ‘pendiente’, ‘confirmada’, ‘cancelada’, ‘finalizada’) 
-fecha_creacion 
-
-4. Pago: 
-id_pago (PK) 
-id_reserva (FK → Reserva) 
-id_usuario (FK → Usuario) 
-metodo_pago (tarjeta, efectivo, transferencia) 
-monto fecha_pago 
-estado_pago (ENUM: ‘aprobado’, ‘rechazado’, ‘pendiente’) 
-
-5. Consulta: 
-id_consulta (PK) 
-id_usuario (FK → Usuario, cliente que consulta) 
-asunto 
-mensaje 
-fecha_consulta 
-estado (ENUM: ‘pendiente’, ‘respondida’, ‘cerrada’)
-
+### 1. Usuario
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `id_usuario` | PK | Identificador único |
+| `nombre` | string | Nombre del usuario |
+| `apellido` | string | Apellido del usuario |
+| `email` | string único | Email único |
+| `contraseña` | hash | Contraseña encriptada |
+| `teléfono` | string | Número de teléfono |
+| `tipo_usuario` | ENUM | 'cliente', 'operador', 'admin' |
+### 2. Habitación
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `id_habitacion` | PK | Identificador único |
+| `numero` | único | Número de habitación único |
+| `tipo` | string | single, doble, suite, etc. |
+| `capacidad` | integer | Capacidad de personas |
+| `precio_noche` | decimal | Precio por noche |
+| `estado` | ENUM | 'disponible', 'ocupada', 'mantenimiento', 'cerrada' |
+| `descripcion` | text | Descripción de la habitación |
+### 3. Reserva
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `id_reserva` | PK | Identificador único |
+| `id_usuario` | FK → Usuario | Usuario que realiza la reserva |
+| `id_habitacion` | FK → Habitación | Habitación reservada |
+| `fecha_inicio` | date | Fecha de inicio |
+| `fecha_fin` | date | Fecha de fin |
+| `estado` | ENUM | 'pendiente', 'confirmada', 'cancelada', 'finalizada' |
+| `fecha_creacion` | datetime | Fecha de creación |
+### 4. Pago
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `id_pago` | PK | Identificador único |
+| `id_reserva` | FK → Reserva | Reserva asociada |
+| `id_usuario` | FK → Usuario | Usuario que paga |
+| `metodo_pago` | string | tarjeta, efectivo, transferencia |
+| `monto` | decimal | Monto del pago |
+| `fecha_pago` | datetime | Fecha del pago |
+| `estado_pago` | ENUM | 'aprobado', 'rechazado', 'pendiente' |
+### 5. Consulta
+| Campo | Tipo | Descripción |
+|-------|------|-------------|
+| `id_consulta` | PK | Identificador único |
+| `id_usuario` | FK → Usuario | Usuario que consulta |
+| `asunto` | string | Asunto de la consulta |
+| `mensaje` | text | Mensaje de la consulta |
+| `fecha_consulta` | datetime | Fecha de la consulta |
+| `estado` | ENUM | 'pendiente', 'respondida', 'cerrada' |
 ## Relaciones
 
 Usuario(1,n)Reserva 
