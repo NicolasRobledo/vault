@@ -55,6 +55,7 @@ Habitacion(1,n)Reserva
 
 
 ## Modelado en Posgres
+```SQL
 
 -- Crear tipos ENUM
 CREATE TYPE tipo_usuario_enum AS ENUM ('cliente', 'operador', 'admin');
@@ -117,11 +118,11 @@ CREATE TABLE Consulta (
     fecha_consulta TIMESTAMP DEFAULT NOW(),
     estado estado_consulta_enum NOT NULL
 );
-
+```
 
 ## PROCEDIMIENTO ALMACENADO o FUNCION
 
-
+```sql
 -- ==========================================
 -- PROCEDIMIENTO ALMACENADO: Crear Reserva
 -- ==========================================
@@ -170,5 +171,6 @@ END;
 $$;
 
 
-
+```
 ## FIN... no hay mas para la base de datos.
+
