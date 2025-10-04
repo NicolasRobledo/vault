@@ -63,7 +63,7 @@ Habitacion(1,n)Reserva
 
 
 ## Modelado en Posgres
-```SQL
+```PostgreSQL
 
 -- Crear tipos ENUM
 CREATE TYPE tipo_usuario_enum AS ENUM ('cliente', 'operador', 'admin');
@@ -180,5 +180,13 @@ $$;
 
 
 ```
-## FIN... no hay mas para la base de datos.
+## FIN... no hay mas para la base de dato
+# abrir-base-datos
+```bash
+sudo -i -u postgres
+```
 
+``` sql
+psql -d testdb
+
+```

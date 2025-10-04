@@ -1,13 +1,15 @@
 ```js
+
 const express = require('express');
 const { Pool } = require('pg');
+const auth = require('./auth');
 
 const app = express();
 const port = 3000;
 
 app.use(express.json());
 
-// Config conexión
+// Configuración de la base de datos
 const pool = new Pool({
   user: 'miusuario',
   host: 'localhost',
@@ -16,40 +18,56 @@ const pool = new Pool({
   port: 5432
 });
 
-// Diccionario de procedimientos permitidos
-const procedures = {
-  obtenerComentarios: "SELECT * FROM obtener_comentarios()",   // sin args
-  insertarComentario: "SELECT * FROM insertar_comentario($1)", // 1 arg
-  buscarPorFecha: "SELECT * FROM buscar_por_fecha($1, $2)"     // 2 args
-};
-
-// Endpoint genérico
-app.post('/procedure', async (req, res) => {
+// Ruta de login
+app.post('/login', async (req, res) => {
   try {
-    const { procedure, args } = req.body;
-
-    // Validar que exista en el diccionario
-    if (!procedures[procedure]) {
-      return res.status(400).json({ error: 'Procedimiento no permitido' });
-    }
-
-    // Ejecutar el procedimiento
-    const result = await pool.query(procedures[procedure], args || []);
-
-    res.json({
-      mensaje: `Procedimiento ${procedure} ejecutado`,
-      resultado: result.rows
+    const { email, password } = req.body;
+    const resultado = await auth.login(pool, email, password);
+    res.json(resultado);
+  } catch (error) {
+    res.status(500).json({ 
+      success: false,
+      error: error.message 
     });
-  } catch (err) {
-    console.error('Error ejecutando procedimiento:', err.message);
-    res.status(500).json({ error: err.message });
   }
 });
 
-// Iniciar servidor
 app.listen(port, '0.0.0.0', () => {
-  console.log(`Servidor iniciado en http://0.0.0.0:${port}`);
+  console.log(`Servidor en http://0.0.0.0:${port}`);
 });
 
+```
 
+```js
+module.exports = {
+  login: async (pool, email, password) => {
+    // Buscar usuario por email
+    const result = await pool.query(
+      'SELECT id, nombre, apellido, tipo_usuario, password FROM usuarios WHERE email = $1',
+      [email]
+    );
+
+    // Si no existe el usuario
+    if (result.rows.length === 0) {
+      return { success: false };
+    }
+
+    const usuario = result.rows[0];
+
+    // Comparar contraseñas directamente (sin hash para la maqueta)
+    if (usuario.password === password) {
+      return {
+        success: true,
+        usuario: {
+          id: usuario.id,
+          nombre: usuario.nombre,
+          apellido: usuario.apellido,
+          tipo_usuario: usuario.tipo_usuario
+        }
+      };
+    } else {
+      return { success: false };
+    }
+  }
+};
 ```
