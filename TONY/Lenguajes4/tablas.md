@@ -1,4 +1,6 @@
 ### Usuarios
+/test
+
 | id_usuario | nombre  | apellido  | email                  | contraseña | telefono | tipo_usuario |
 |------------|---------|-----------|-----------------------|------------|----------|--------------|
 | 1          | Nicolas | Robledo   | tomatekiwi84@gmail.com | 12345678   |          | cliente      |
@@ -13,6 +15,8 @@
 | 10         | Pedro   | Vega      | pedro@gmail.com        | pass123    |          | cliente      |
 
 ### Habitaciones
+/habitaciones
+
 | id_habitacion | numero | tipo     | capacidad | precio_noche | estado        | descripcion                           |
 |---------------|--------|----------|-----------|--------------|---------------|---------------------------------------|
 | 1             | 101    | Simple   | 1         | 50.00        | disponible    | Habitación cómoda para una persona.   |
@@ -27,6 +31,8 @@
 | 10            | 110    | Familiar | 4         | 260.00       | ocupada       | Habitación familiar ocupada.          |
 
 ### Reservas
+/reservas
+
 | id_reserva | id_usuario | id_habitacion | fecha_inicio | fecha_fin | estado      | fecha_creacion           |
 |------------|------------|---------------|--------------|-----------|------------|-------------------------|
 | 12         | 1          | 1             | 2025-10-05   | 2025-10-08 | confirmada | 2025-10-04 13:37:07.060548 |
@@ -39,3 +45,7 @@
 | 19         | 8          | 8             | 2025-10-05   | 2025-10-09 | finalizada | 2025-10-04 13:37:07.060548 |
 | 20         | 9          | 9             | 2025-10-12   | 2025-10-14 | confirmada | 2025-10-04 13:37:07.060548 |
 | 21         | 10         | 10            | 2025-10-02   | 2025-10-05 | pendiente  | 2025-10-04 13:37:07.060548 |
+# fotos
+![](https://robledo.website/patas/1a.jpg)
+las fotos tienen cache ahora eso reduce el trafico al servidor
+
