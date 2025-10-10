@@ -56,7 +56,6 @@ Usuario(1,n)Consulta
 Usuario(1,n)Pago 
 Pago(1,1)Reserva 
 Habitacion(1,n)Reserva
-
 ## Diagrama DER + ET
 
 ![[Pasted image 20250930093133.png]]
