@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TONY/Lenguajes4/tablas.md",
+                "file": "TONY/Lenguajes4/crud-reserva.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tablas"
+              "title": "crud-reserva"
             }
           }
         ],
@@ -186,16 +186,17 @@
   },
   "active": "5720e0fcfe5d9d92",
   "lastOpenFiles": [
-    "TONY/Lenguajes4/Requerimentos.md",
     "TONY/Lenguajes4/BDD.md",
-    "TONY/Lenguajes4/Pasted image 20250930093133.png",
+    "TONY/Lenguajes4/crud-reserva.md",
     "TONY/Lenguajes4/tablas.md",
+    "TONY/LENG4-BOBEDA/18sep Practica.md",
+    "TONY/LENG4-BOBEDA/Apunte lenguajes iv.md",
+    "TONY/LENG4-BOBEDA/uso de ract.md",
+    "TONY/Lenguajes4/Pasted image 20250930093133.png",
+    "TONY/Lenguajes4/Requerimentos.md",
     "robledo/lenguje4/Resumen_PostgreSQL_Nodejs.md",
     "robledo/lenguje4/lenguaje-4-final.md",
-    "TONY/LENG4-BOBEDA/uso de ract.md",
-    "TONY/LENG4-BOBEDA/Apunte lenguajes iv.md",
     "TONY/SIST2-BOBEDA/12Sep Teoria.md",
-    "TONY/LENG4-BOBEDA/18sep Practica.md",
     "robledo/clasificacion-software.md",
     "robledo/crisis.md",
     "robledo/evolucion-software.md",
