@@ -62,7 +62,29 @@ Habitacion(1,n)Reserva
 
 
 ## Modelado en Posgres
-```SQL
+```sql
+INSERT INTO Usuario (nombre, apellido, email, contraseña, telefono, tipo_usuario)
+VALUES ('Nicolas', 'Robledo', 'nicolas@example.com', 'miclave123', '1122334455', 'cliente');
+
+```
+
+
+```sql
+INSERT INTO Habitacion (numero, tipo, capacidad, precio_noche, estado, descripcion)
+VALUES (101, 'doble', 2, 4500.00, 'disponible', 'Habitación doble con vista al jardín');
+
+```
+
+
+```sql
+INSERT INTO Reserva (id_usuario, id_habitacion, fecha_inicio, fecha_fin, estado)
+VALUES (1, 1, '2025-10-10', '2025-10-15', 'pendiente');
+
+
+```
+
+
+```PostgreSQL
 
 -- Crear tipos ENUM
 CREATE TYPE tipo_usuario_enum AS ENUM ('cliente', 'operador', 'admin');
@@ -125,6 +147,23 @@ CREATE TABLE Consulta (
     fecha_consulta TIMESTAMP DEFAULT NOW(),
     estado estado_consulta_enum NOT NULL
 );
+CREATE TABLE EstadoConcurrencia (
+    id_estado SERIAL PRIMARY KEY,
+    nombre_tabla VARCHAR(50) UNIQUE NOT NULL,
+    version INT NOT NULL DEFAULT 1
+);
+INSERT INTO EstadoConcurrencia (nombre_tabla, version) VALUES
+('Usuario', 1),
+('Habitacion', 1),
+('Reserva', 1);
+
+```
+
+```sql
+UPDATE EstadoConcurrencia
+SET version = version + 1
+WHERE nombre_tabla = 'Usuario';
+
 ```
 
 ## PROCEDIMIENTO ALMACENADO o FUNCION
@@ -179,5 +218,13 @@ $$;
 
 
 ```
-## FIN... no hay mas para la base de datos.
+## FIN... no hay mas para la base de dato
+# abrir-base-datos
+```bash
+sudo -i -u postgres
+```
 
+``` sql
+psql -d testdb
+
+```
