@@ -90,56 +90,71 @@ Estos se aplican para lograr el analisis de requerimentos.
 ---
 
 ### Técnicas de Relevamiento
-Se la presenta como herramienta de trabajo tradicionales aveces algunas se aplican ensima de otra. En la proxima materia se le adicionan otras tecnicas.
+Se la presenta como herramienta de trabajo tradicionales aveces algunas se aplican ensima de otra. En la proxima materia se le adicionan otras tecnicas. Tecnicas de relevamiento tradicionales:
 
-Tecnicas de relevamiento tradicionales:
-1. **Entrevistas**: Son encuentro personales que tiene el analista  de sistemas con interlocutores identificados como una buena fuente de informacion. 
-   Son un encuentro personal para entablar diálogo con las personas adecuadas, a fin de reconocer las características del sistema.
-	Entrevistas: Encuentro personal para entablan dialogo con las personas adecuadas, a fin de reconocer las caracteristicas del sistema.
-	Se quiere conocer opinión y sentimientos del usuario respecto al estado actual del sistema, objetivos de la organización, características del personal, procedimientos formales e informales, etc.
-	
-	
-	
-	Tipos de preguntas: La forma en que expresamos nuestras preguntas, condicionanla respuesta del entrevistado:
-	- Preguntas abiertas: Permiten expresar libremente la respuesta
-	- Preguntas Cerradas: Acoran la respuestas a opciones predefinidas.
-	
-	Formas de Entrevistas:
-	Cuando planificamos una entrevista, podemos definir las siguientes formas:
-	- Entrevista estructurada: Establecemos una lista de temas que guían el diálogo, y nos proponemos seguir uno a uno, de principio a fin.
-	- Entrevista No Estructurada: Consiste en tener claro el objetivo del diálogo, pero planteamos el diálogo sin temario organizado, sino que abordaremos el tema objetivo en cuanto nos sea posible
-	
-	Formato de la entrevista: Cuando planificamos la entrevista, determinamos el objetivo del diálogo, respecto a la información que prioritariamente debemos obtener. Además, debemos prever cómo se desarrollará la actividad durante la entrevista. Las entrevistas se pueden abordar en las siguientes formas:
-	- Piramidal: Consiste en iniciar directamente enfocados en el objetivo, y luego, de ser posible, ampliar el diálogo a más temas.
-	  ![[Pasted image 20251102175425.png]]
-	- Embudo: Consiste en iniciar un diálogo con temario amplio, para abordar el tema objetivo hacia el final de la entrevista.
-	  ![[Pasted image 20251102175445.png]]
-	- Rombo: Consiste en iniciar directamente enfocados en el objetivo, luego ampliar a otros temas, pero regresando al tema objetivo antes de terminar.
-	  ![[Pasted image 20251102175501.png]]
-	
-	Pasos en la preparación de la entrevista:
-	1. Lectura de antecedentes
-	2. Establecimiento de los objetivos
-	3. Selección de los entrevistados
-	4. Preparación del entrevistado
-	5. Selección del tipo de preguntas
-	6. Selección de como documentar
-	
-	Tipo de informacion Obtenida:
-	+ Objetivos
-	+ Opiniones
-	+ Sentimientos
-	+ Procedimientos informales
-	
-	Recomendaciones Generales:
-	+ Observar el objetivo general del sistema que se solicita.
-	+ Asegurar el entendimiento y compromiso del entrevistado.
-	+ Conducir ordenadamente la entrevista.
-	+ Cerrar la entrevista con un tono positivo.
-	+ Planificar la reunión con anticipación.
-	+ Mantener el control de la entrevista
+#### ENTREVISTAS
+Las **entrevistas** son encuentros personales que realiza el **analista de sistemas** con interlocutores que poseen información valiosa sobre la organización. Su propósito es **entablar un diálogo con las personas adecuadas** para **reconocer las características del sistema**, comprender su funcionamiento actual y detectar posibles necesidades de mejora.
 
-2. **Cuestionarios**: Consulta masiva, generalmente escrita. Puede ser anónima para favorecer la libre expresión. Los resultados pueden procesarse.
+A través de las entrevistas, se busca conocer **las opiniones, sentimientos y percepciones de los usuarios** respecto al sistema existente, los **objetivos de la organización**, las **características del personal**, y los **procedimientos formales e informales** que se llevan a cabo.
+
+Estas reuniones permiten al analista **observar actitudes, emociones y niveles de compromiso** de los entrevistados, comprendiendo cómo realizan su trabajo, qué dificultades enfrentan y cuáles son sus aspiraciones. Por ello, las entrevistas deben ser **guiadas y estructuradas**, evitando que se transformen en simples charlas informales, para garantizar la eficiencia del proceso.
+
+Generalmente, el analista inicia entrevistando a **personas con una visión general de la empresa**, continúa con **gerentes o supervisores**, y finaliza —con autorización— entrevistando a **operarios o empleados de base**, así como a **los dueños o directivos**. De este modo, puede comprender las distintas perspectivas que conviven dentro de la organización: la del trabajador, con una visión operativa y cotidiana, y la del empresario, con una mirada estratégica y gerencial.
+
+El analista debe desarrollar una **gran capacidad de escucha activa**, manteniendo el control del diálogo sin interrumpir la expresión del entrevistado, para obtener la información necesaria y cumplir con los objetivos de la entrevista.
+	
+TIPOS DE PREGUNTAS
+La **forma en que expresamos las preguntas** condiciona la respuesta del entrevistado:
+- **Preguntas abiertas:** Permiten al entrevistado expresar libremente su respuesta. Consultas, de tal manera que el entravistado puede describir situaciones apliamente. Aqui debe de tenerse cuidado para que la entrevista no se valla por las ramas.
+- **Preguntas cerradas:** Limitan la respuesta a opciones predefinidas. Aqui se formulan las preguntas para que las respuestas sean predefinidas. Se pueden sugerir las respuestas. Ejemplo: Se entendio? si/no.
+	
+FORMAS DE ENTREVISTAS
+Al planificar una entrevista, podemos definir la estructura del diálogo:
+- **Entrevista estructurada:** Se establece una lista de temas que guían la conversación, siguiendo un orden definido de principio a fin. Se puede hacer un check list para ir manejando y tocando todos los temas de la entrevista. si no lo hacemos asi puede que no se tengan el suficioente tiempo para desarrollarla. A quien le voy a estrevistar, cuanto timepo, cuanto tiempo, etc...
+- **Entrevista no estructurada:** Se tiene claro el objetivo del diálogo, pero el temario no está organizado; se abordan los temas según surjan de manera natural durante la conversación. No hay claridad de la estructurada (O DE LA CHECK LIST)
+
+*LAS ENTREVISTAS DEBEN PLANIFICARSE, NO SE PUEDE IMPROVISAR*
+
+FORMATO DE LA ENTREVISTA
+Al planificar la entrevista, es importante determinar el **objetivo del diálogo** ("Quiero saber __ en la entrevista...")y cómo se desarrollará la actividad. 
+
+Los formatos más comunes son:
+- **Piramidal:** Se inicia directamente enfocados en el objetivo, y luego, si es posible, se amplía el diálogo a otros temas. En preferencia se pueden preguntar de entrada facilmente o en estrategia se pueden saber primero los temas de los objetivos y depsues explayarse con otros temas.
+    ![[Pasted image 20251102175425.png]]
+- **Embudo:** Se inicia con un temario amplio y se va reduciendo progresivamente hacia el tema objetivo al final de la entrevista.  Temas que no se pueden saber facilmente "A cuantas personas quierendejar sin trabajo con el sistema"... entonces al tema se lo abarca con otra tematica complementaria con el tem a tratar. no solo son temas incomodos, sino que son temas que yo no tengo muy claros. 
+    ![[Pasted image 20251102175445.png]]
+    
+- **Rombo:** Se inicia enfocado en el objetivo, se amplía a otros temas y se regresa al objetivo antes de finalizar la entrevista. Combina la piramidal como el embudo, primero presentamos un objetivo de la charla, eso da pie en otros temas y al final retomamos los objetivos antes de que termine la entrevista. Recomendacion: Es la estrategia de no terminar la entrevista sin tener en claro lo que el entrevistador tiene para enseñarnos. ESCUCHAR... si entendimos algo entonces lo confirmamos antes de que termine la entrevista.
+  *PARA DIRIGIR UNA ENTREVISTA SE REQUIERE "MENTALIDAD ABIERTA", **EVITANTO PRECONCEPTOS**...* Es un desafió  importante evitar prejuzgar.
+    ![[Pasted image 20251102175501.png]]
+    
+PASOS EN LA PREPARACIÓN DE LA ENTREVISTA: 
+1. Lectura de antecedentes
+2. Establecimiento de los objetivos
+3. Selección de los entrevistados
+4. Preparación del entrevistado
+5. Selección del tipo de preguntas
+6. Selección de como documentar: grabar no es una buena idea a menos que avisemos y que nuestro entrevistado quede condicionado.
+	
+TIPO DE INFORMACIÓN OBTENIDA
+- Objetivos
+- Opiniones
+- Sentimientos
+- Procedimientos informales
+
+*PELACITA: No es lo mismo que yo sea un programador a que yo sea analista. depende que como me sienta en comodidad. interactuar con personas o programando.*
+
+RECOMENDACIONES GENERALES
+- Observar el objetivo general del sistema que se solicita.
+- Asegurar el **entendimiento y compromiso** del entrevistado.
+- Conducir la entrevista de manera ordenada.
+- Cerrar la entrevista con un **tono positivo**.
+- Planificar la reunión con **anticipación**.
+- Mantener **control del diálogo** sin limitar la expresión del entrevistado.
+*A esto no le dio bola en la clase*
+
+#### CUESTIONARIOS
+**Cuestionarios**: Consulta masiva, generalmente escrita. Puede ser anónima para favorecer la libre expresión. Los resultados pueden procesarse.
 	
 	Cuestionarios: Consulta masiva, generalmente escrita. Puede ser anónima para favorecer la libre expresión. Los resultados pueden procesarse.
 	
@@ -161,7 +176,7 @@ Tecnicas de relevamiento tradicionales:
 	- Utilizar Cuestionarios si se desea medir la opinión general antes de que un proyecto tome una dirección particular.
 	- Utilizar Cuestionarios si se desea sondear problemas del sistema actual para identificarlos y darles seguimiento por medio de entrevistas.
 
-3. **Observación**: Permite verificar en el lugar donde suceden los hechos, cómo realmente se comportan el sistema y las personas.
+8. **Observación**: Permite verificar en el lugar donde suceden los hechos, cómo realmente se comportan el sistema y las personas.
 	
 	Observación: Permite verificar en el lugar donde suceden los hechos, cómo realmente se comportan el sistema y las personas.
 	
@@ -169,7 +184,7 @@ Tecnicas de relevamiento tradicionales:
 	
 	Tipo de informacion obtenida: Se puede necesitar observar tanto el comportamiento de las personas de la organización, como del ambiente físico en el que se desarrollan  as actividades. Está orientada a verificar cómo se desempeña el sistema actual,  confirmando o corrigiendo lo que pudimos aprender con otras técnicas.
 
-4. **Revisión de registros**: Permite conocer o confirmar, mediante los documentos cotidianos que usa la organización, detalles operativos.
+9. **Revisión de registros**: Permite conocer o confirmar, mediante los documentos cotidianos que usa la organización, detalles operativos.
 	
 	Revision de Registros: Permite conocer o confirmar, mediante los documentos cotidianos que usa la organización, detalles operativos.
 	
@@ -182,7 +197,7 @@ Tecnicas de relevamiento tradicionales:
 	**Es conveniente obtener copias de documentos relevantes que estén usadas y no  formularios en blanco.**
 	Al contar con numerosos documentos, informes de salida, etc. que generan los miembros de una organización. ¿A cuáles debe atender el analista y a cuáles debe ignorar?
 
-5. Especificación de requisitos de software
+10. Especificación de requisitos de software
 	Introducción
 	- Referencia del sistema
 	- Descripción General
