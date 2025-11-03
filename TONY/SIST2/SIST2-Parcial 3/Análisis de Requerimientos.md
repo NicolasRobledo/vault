@@ -21,43 +21,55 @@ Temas teoricos previos:
 
 **Determinación de Requerimientos**: Es el estudio de un sistema con el objetivo de conocer como trabaja y donde es necesario efectuar cambios y mejoras.
 
-Aqui el personaje principal es el *analista funcional*. Este busca como es la realidad delimitada por un limite con esta.
+Aqui el personaje principal es el **analista funcional**. Este busca como es la **realidad** delimitada por un limite con esta.
 
 La percepcion de la relaidad que tenga el analista, construye el **Sitema Objeto**.
 
-Dentro del sistema Objeto, el analista comprende el **sistema de informacion**. En particular se presta atencion aqui. este es compuesto por varios elementos (Sistema de DATOS):
-- Procedimientos: o froma en la que se hacen las cosas dentro de la organizacion.
-- Gente: Trabaja en la organizacion
-- documentos: Reflejasn como funciona diariamente la empresa dejando registros de ello.
+Dentro del sistema Objeto, el analista comprende el **sistema de informacion**. En particular se presta atención aquí. este es compuesto por varios elementos (**Sistema de DATOS**):
+- *Procedimientos*: o forma en la que se hacen las cosas dentro de la organizacion.
+- *Gente*: Trabaja en la organización
+- *documentos*: Reflejan como funciona diariamente la empresa dejando registros de ello.
 
-**Requerimiento**: Caracteristica que debe incluirse en un nuevo sistema.
+**Requerimiento**: (= **Requisito**) Característica que debe incluirse en un nuevo sistema. Es una característica solicitada por nuestro cliente o por nosotros.
+
+Es Identificar descripciones de lo que el sistema debe hacer ofrecer, que hacer para cambiar la vida y ayudar las persona y en que **restricciones** de operaciones deben operar. de Hardware, de operacion (Compatibilidad), etc etc
 
 Esa caracteristica es facil de comprender a simple vista?
-
 *"... Se que crees que comprendes loq ue piensas que de dicho, pero no estoy seguro de que loq ue creiste oir sea lo que yo quise decir"*
 
-Antes de realizar la construccion de un software hayq ue atravezar este terreno complejo.
+Antes de realizar la construcción de un software hay que atravesar este terreno complejo.
 
-Requerimientos: Identifiacr descripciones de loque el sistem debe hacer ofrecer, que hacer para cambiar la vida y ayudar las persona y en que restringciones de operaciones deben operar.
 
-**Tipos de Requerimientos**: Define con precicion el sofware que se va a construir.
-- **Requerimientos del Usuario**: Descripcion abstractas de alto nivel.
-- **Requerimientos del Sistema**:Descripcion del sistema de lo que el sistema debe hacer.
-- **Requerimientos Funcionales**: Servicios que el sistema debe proveer, como reacciona a entradas y como deberia comprtarse en sustuaciones especificar. En alcunos casos tambien explican loq ue NO deberia hacer el sistema.
-- **Requerimientos no funcionales**: Se relacionan con propiedades del software tales como fiabilidad, velocidad de respuesta, capacidad de almacenamiento, caracteristicas de seguridad, etc.
+**Tipos de Requerimientos**: Define con precicion el sofware que se va a construir. Lo mejor es establecer de distintos tipos para que sirvan como guia.
+- **Requerimientos del Usuario**: Descripción abstractas de alto nivel. Estas en general tienen una descripcion tecnica muy baja. y no se pretende tener demaciado tecnisismo. Se espera que se usen terminologias y estilos afines al cliente.
+- **Requerimientos del Sistema**: Descripcion del sistema de lo que el sistema debe hacer. mas detalladas, mas tecnicos, mas referidas a nuestos equipos.
+- **Requerimientos Funcionales**: Servicios que el sistema debe proveer, como reacciona a entradas y como deberia comprtarse en sustuaciones especificar. En algunos casos tambien explican lo que NO deberia hacer el sistema.
+- **Requerimientos no funcionales**: Se relacionan con propiedades del software tales como fiabilidad, velocidad de respuesta, capacidad de almacenamiento, características de seguridad, etc. Son caracteristicas que tienden a mencionar aspectos que no tienen que ver con la funcionalidad. Velocidad, capacidad de almacenamiento. Son las Caracteristicas no funcional, sino que son restrigciones de tipo tecnologicas y o operativas.
+A todo esto se lo buelca en un documento el cual con los requerimientos define con precicion el software que se va a cosntruir. Este documento se llama "Especificacion de requerimentos" Es un documento de documentos, se lo mandan a los diseñadores para que las trabajen como planos para que después sea construido al software.
 
 ---
 
+Este documento se construye a través de un *proceso de actividades*.
+
 ### Ingeniería de Requerimientos
-Es el proceso de descubrir, analizarm documentar y verificar los servicios y restringciones se lla,a Ingenieria de requerimientos (IR)
+Es el proceso de descubrir, analizarm, documentar y verificar los servicios y restringciones se llama Ingeniería de requerimientos (IR).
+No se tiene los resultados de un momento a otro de la "Especificación de requerimientos", sino que lleva un análisis.
 
 4 etapas:
 - **Descubrir**: Mediante las tecnicas apropiadas, establecer las caracteristicas del negocio donde se requiere el software.
+  Este proceso invita a analiszar las diferentes ideas y opciones que se nos presenta para designar la mejor solucion.
 - **Analizar**: Organizar las diferentes opciones de solucion, y elegir "La mejor alternativa de solucion"
+  Ya conociendo lo del punto 1 loq ue la empresa necesita, aqui imaginamos soluciones para resolver las necesidades.
 - **Modelar**: Traducir en modelos la solucion a proponer.
+  Diagramamanos esquemas a grandes razgos , por ejemplo dfd, der, dc, traducir las ideas a soluciones para los requerimentos.
 - **Validar**: Chequear con el cliente si el modelo propuesto se ajusta a sus necesidades.
+  Negociacion con el cliente para corroborar que el cliente esta deacuerdo con nuestra solucion.
+Despies de estas etapas estamos en condicion de expresar lo que es nuestro documento de analisis de requerimentos.
+PELACITA: *"Ingenieria de requerimentos"*: porque hace referencia al uso del conocimiento cientifico para determinar los reequerimentos, que es la practica exitosa bolcada en antecedentes que se aprovecha para hacer con mayor probabilidad de exito en estos 4 pasos finalizando en el documento.
 
-Analisis de requerimientos en el proceso de desarrollo: Se pueden Identificar 5 areas de esfuerzo:
+Contexto: Igenieria de sistemas de computadoras (Idea global del proyecto) < **Analisis de requerimentos del software** (Paso intermedio previo al diseño de software) < ...
+
+En este contexto se pueden Identificar 5 areas de esfuerzo:
 - Reconocimiento del problema
 - Evaluación y síntesis
 - Modelización
@@ -66,22 +78,27 @@ Analisis de requerimientos en el proceso de desarrollo: Se pueden Identificar 5 
 
 ---
 
-### Principio de Análisis: 
-- Se debe representar y comprender el ámbito de información del problema.
-- Se deben desarrollar los modelos que representen la información, función y el comportamiento del sistema.
-- Se deben subdividir los modelos (y el problema) de forma que se descubran los detalles de una manera progresiva (o jerárquica).
-- El proceso de análisis debe ir de la información esencial hacia el detalle de la implementación.
+### Principio de Análisis:
+Estos se aplican para lograr el analisis de requerimentos.
+- Se debe representar y comprender el ámbito de información del problema. Determinar el alcance del negocio. "Analista con una lupita"
+- Se deben desarrollar los modelos que representen la información, función y el comportamiento del sistema. Que son lo que usamos con diagramas de flujo, mantenimiento de datos en un der, etc
+- Se deben subdividir los modelos (y el problema) de forma que se descubran los detalles de una manera progresiva (o jerárquica). La idea global es algo general y se la Soluciona haciendo pequeños diagramas como en el diagrama de contexto.
+- El proceso de análisis debe ir de la información esencial hacia el detalle de la implementación. Al principio es pensar que tipo de software (Esencial) vamos a hacer y despues en el tipo de maquina (detalle) vamos a usar
 
 
 
 ---
 
 ### Técnicas de Relevamiento
-Propuesta tradicional:
-1. **Entrevistas**: Encuentro personal para entablar diálogo con las personas adecuadas, a fin de reconocer las características del sistema.
-	Entrevistas: Encuantro personal para entavlan rialogo con las personas adecuadas, a fin de reconocer las caracteristicas del sistema.
-	
+Se la presenta como herramienta de trabajo tradicionales aveces algunas se aplican ensima de otra. En la proxima materia se le adicionan otras tecnicas.
+
+Tecnicas de relevamiento tradicionales:
+1. **Entrevistas**: Son encuentro personales que tiene el analista  de sistemas con interlocutores identificados como una buena fuente de informacion. 
+   Son un encuentro personal para entablar diálogo con las personas adecuadas, a fin de reconocer las características del sistema.
+	Entrevistas: Encuentro personal para entablan dialogo con las personas adecuadas, a fin de reconocer las caracteristicas del sistema.
 	Se quiere conocer opinión y sentimientos del usuario respecto al estado actual del sistema, objetivos de la organización, características del personal, procedimientos formales e informales, etc.
+	
+	
 	
 	Tipos de preguntas: La forma en que expresamos nuestras preguntas, condicionanla respuesta del entrevistado:
 	- Preguntas abiertas: Permiten expresar libremente la respuesta

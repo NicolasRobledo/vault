@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "01699aa66accee83",
+        "id": "5d8f8aa078a03896",
         "type": "tabs",
         "children": [
           {
-            "id": "7042be79d1be0e54",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SIST2-Parcial 3/12Sep Teoria.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "12Sep Teoria"
-            }
-          },
-          {
-            "id": "54a05af4afec1d18",
+            "id": "1c44622d92dbed53",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "5f0e2e4fa2a887b7",
@@ -183,13 +170,25 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "7042be79d1be0e54",
+  "active": "1c44622d92dbed53",
   "lastOpenFiles": [
+    "SIST2-Parcial 3/24Oct Teoria.md",
+    "SIST2-Parcial 3/Conceptos y Principios del Diseño.md",
     "SIST2-Parcial 3/Análisis de Requerimientos.md",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102192853.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102192826.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102191947.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102191932.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102191542.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102190818.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102185529.png",
+    "SIST2-Parcial 3/Imagenes",
     "SIST2-Parcial 3/12Sep Teoria.md",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102182030.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102175501.png",
+    "SIST2-Parcial 3/Imagenes/Pasted image 20251102175445.png",
     "SIST2-Parcial 2/Ingenieria de Software/Ingeniería de Software.md",
     "Notas de la Practica",
-    "SIST2-Parcial 3/24Oct Teoria.md",
     "Notas de la Practica/08Oct Practica.md",
     "SIST2-Parcial 3/17Oct TEORIA.md",
     "SIST2-Parcial 3/24Sep Teoria.md",
