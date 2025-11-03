@@ -137,12 +137,13 @@ PASOS EN LA PREPARACIÓN DE LA ENTREVISTA:
 6. Selección de como documentar: grabar no es una buena idea a menos que avisemos y que nuestro entrevistado quede condicionado.
 	
 TIPO DE INFORMACIÓN OBTENIDA
+Hay procedimientos infromales que no estan de otra manera que si no fuese charlando no son mostradas.
 - Objetivos
 - Opiniones
 - Sentimientos
 - Procedimientos informales
 
-*PELACITA: No es lo mismo que yo sea un programador a que yo sea analista. depende que como me sienta en comodidad. interactuar con personas o programando.*
+*PELACITA: No es lo mismo que yo sea un __programador__ a que yo sea __analista__. depende que como me sienta en comodidad. interactuar con personas o programando.*
 
 RECOMENDACIONES GENERALES
 - Observar el objetivo general del sistema que se solicita.
@@ -155,77 +156,55 @@ RECOMENDACIONES GENERALES
 
 #### CUESTIONARIOS
 **Cuestionarios**: Consulta masiva, generalmente escrita. Puede ser anónima para favorecer la libre expresión. Los resultados pueden procesarse.
-	
-	Cuestionarios: Consulta masiva, generalmente escrita. Puede ser anónima para favorecer la libre expresión. Los resultados pueden procesarse.
-	
-	Permiten:
-	- Unir informacion relacionada con varios aspectos de un sistema segun la opinion de un grupo grande de personas
-	- Asegurar en anonimato del entrevistado, lo que conduce a respuestas mas honestas.
-	- Las respuestas puedes cuantificarse, siendo posible utilizar preguntas abiertas o cerradas.
-	- Determinar que tan difundido o limitado se encuentra un sentimiento (que halla sido expresado durante una entrevista)
-	- Sondear una gran muestra de usuarios con el fin de detectar problemas (antes de la programación de las entrevistas).
-	
-	Tipo de infromacion obtenida:
-	- Actitudes
-	- Opiniones
-	- conductas
-	- Caracteristicas
-	
-	Recomendaciones generales:
-	- Utilizar Cuestionarios si las personas a quienes se necesita interrogar se encuentran muy dispersas en distintas áreas.
-	- Utilizar Cuestionarios si se desea medir la opinión general antes de que un proyecto tome una dirección particular.
-	- Utilizar Cuestionarios si se desea sondear problemas del sistema actual para identificarlos y darles seguimiento por medio de entrevistas.
 
-8. **Observación**: Permite verificar en el lugar donde suceden los hechos, cómo realmente se comportan el sistema y las personas.
-	
-	Observación: Permite verificar en el lugar donde suceden los hechos, cómo realmente se comportan el sistema y las personas.
-	
-	![[Pasted image 20251102182030.png]]
-	
-	Tipo de informacion obtenida: Se puede necesitar observar tanto el comportamiento de las personas de la organización, como del ambiente físico en el que se desarrollan  as actividades. Está orientada a verificar cómo se desempeña el sistema actual,  confirmando o corrigiendo lo que pudimos aprender con otras técnicas.
+Permiten consultar masivamente, sobre como opinan o comompiensen sobre la organizacion, puede ser escrita puede ser virtual pero tiene como ventaja nos perimite conocer a muhca gente con respecto a sus opiñones, aqui tambien se pueden hacer preguntas abiertass o cerradas, y por lo general el entrevistado suele ser mas honesto, en general los cuestionarios suelen ser escritos, ejemplo, cuestionario web, y todos los contestan en linea. El problema es que el analista tiene que leer las masivas respuestas, a menos que tenga una tecnica sistema que procese las respuestas. Se tiene que aprvechar la ventaja pero esta no permite ver las expreciones y las actitudes humanas que no son vistas.
 
-9. **Revisión de registros**: Permite conocer o confirmar, mediante los documentos cotidianos que usa la organización, detalles operativos.
-	
-	Revision de Registros: Permite conocer o confirmar, mediante los documentos cotidianos que usa la organización, detalles operativos.
-	
-	Tipo de informacion Obtenida:
-	- Estructuras de los datos
-	- Registros Informales 
-	- Insuficiencia de datos
-	
-	Se debe verificar la información obtenida de entrevistas y cuestionarios con las reales actividades representadas en documentos y demás papeles de la organización.
-	**Es conveniente obtener copias de documentos relevantes que estén usadas y no  formularios en blanco.**
-	Al contar con numerosos documentos, informes de salida, etc. que generan los miembros de una organización. ¿A cuáles debe atender el analista y a cuáles debe ignorar?
+Cuestionarios: Consulta masiva, generalmente escrita. Puede ser anónima para favorecer la libre expresión. Los resultados pueden procesarse.
+Permite Unir informacion relacionada con varios aspectos de un sistema segun la opinion de un grupo grande de personas
+Asegurar en anonimato del entrevistado, lo que conduce a respuestas mas honestas.
+Las respuestas puedes cuantificarse, siendo posible utilizar preguntas abiertas o cerradas.
+Determinar que tan difundido o limitado se encuentra un sentimiento (que halla sido expresado durante una entrevista)
+Sondear una gran muestra de usuarios con el fin de detectar problemas (antes de la programación de las entrevistas).
 
-10. Especificación de requisitos de software
-	Introducción
-	- Referencia del sistema
-	- Descripción General
-	- Restricciones del Proyecto software
-	Descripción de la información
-	- Representación del flujo de información
-		- Flujo de Datos
-		- Flujo de Control
-	- Representación del contenido de la información
-	- Descripción de la interfaz del sistema
-	Descripción Funcional
-	- Partición Funcional
-	- Descripción Funcional
-		- Narrativa del procesamiento
-		- Restricciones / limitaciones
-		- Requisitos de rendimiento
-		- Restricciones de diseño
-		- Diagramas de soporte
-	- Descripción del Control
-		- Especificaciones del Control
-		- Restricciones de diseño
-	Descripción del Comportamiento
-	- Estados del Sistema
-	- Sucesos y acciones
-	Criterios de Validación
-	- Límites de rendimiento
-	- Clases de Pruebas
-	- Respuestas esperadas del software
-	- Consideraciones especiales
-	Bibliografía
-	Apéndice
+Tipo de infromacion obtenida:
+- Actitudes
+- Opiniones
+- conductas
+- Caracteristicas
+
+Es importante saber que los cuestionarios no es la primer tecnica que se aplica, en general uno aplica mejor entrevista, se tiene idea de la oorganizacion y de alli se utiiliza cuestionarios... hay sucursales o sectores en los que se combiene implementar...
+
+Recomendaciones generales:
+- Utilizar Cuestionarios si las personas a quienes se necesita interrogar se encuentran muy dispersas en distintas áreas.
+- Utilizar Cuestionarios si se desea medir la opinión general antes de que un proyecto tome una dirección particular.
+- Utilizar Cuestionarios si se desea sondear problemas del sistema actual para identificarlos y darles seguimiento por medio de entrevistas.
+
+#### Observación
+Permite verificar en el lugar donde suceden los hechos, cómo realmente se comportan el sistema y las personas.
+
+Observación: Permite verificar en el lugar donde suceden los hechos, cómo realmente se comportan el sistema y las personas.
+
+Permite verificar desde el lugar que trabaja la empresa como ocurren las cosas, a lo mejor que hicimos cuestionario y sacamos concluciones. lo ejor es hacerse un tiempo para tomarse el lugar de observar. Consiste en estar presente en el lugar, una contra: yo podre encontrar muchas imfromacion importante: mensajes, relaciones, influencias, etc etc peromite sacar conclusiones diferentes a las de los otros dos metodos. tenemos que saber que si nos paramos en un Hambiente de trabajo el analista ya genera una influencia ya que es un egente externo al entorno aboral a pesar de ser este presentado por el dueño, este es un condicionante importante.
+
+![[Pasted image 20251102182030.png]]
+
+Tipo de informacion obtenida: Se puede necesitar observar tanto el comportamiento de las personas de la organización, como del ambiente físico en el que se desarrollan  as actividades. Está orientada a verificar cómo se desempeña el sistema actual,  confirmando o corrigiendo lo que pudimos aprender con otras técnicas.
+
+#### Revisión de registros
+Permite conocer o confirmar, mediante los documentos cotidianos que usa la organización, detalles operativos.
+	
+Revision de Registros: Permite conocer o confirmar, mediante los documentos cotidianos que usa la organización, detalles operativos.
+
+Consiste en ver documentos que se utilizan en la empresa, la idea es recuperar a partir de estos documentos el funcionamiento de la empresa. Documentos que esten usados, no en blanco o en limpio, las anotaciones a los margenes dan pistas mejores para determinar las caracteristicas que tiene que tener el sistema a implementar
+
+
+Tipo de informacion Obtenida:
+- Estructuras de los datos: ¿Como se estructuran los datos? como se anotan siertos formularios, etc
+- Registros Informales  
+- Insuficiencia de datos
+Uno aprende , se imagina y se aprende mas sobre el negocio en el que se esta trabajando.
+PELACITA: no es la primer tecnica pero nos va a confirmar a que caracteristicas hayq ue pestar atencion y cuales ignorar porque no van a la vida diaria de la empresa.
+
+Se debe verificar la información obtenida de entrevistas y cuestionarios con las reales actividades representadas en documentos y demás papeles de la organización.
+**Es conveniente obtener copias de documentos relevantes que estén usadas y no  formularios en blanco.**
+Al contar con numerosos documentos, informes de salida, etc. que generan los miembros de una organización. ¿A cuáles debe atender el analista y a cuáles debe ignorar?
