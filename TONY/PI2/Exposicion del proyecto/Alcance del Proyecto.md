@@ -1,0 +1,1 @@
+**Alcance:** Define los límites claros del proyecto: qué se incluye, qué se excluye, y qué se entrega. Establece un cronograma realista de 16 meses con fases secuenciales que minimizan el riesgo operativo y aseguran una transición controlada desde el sistema actual hacia la nueva plataforma digital.

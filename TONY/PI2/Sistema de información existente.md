@@ -1,0 +1,1 @@
+**Sistema de Información Existente:** La situación actual representa un caso crítico de ineficiencia operativa donde 4.800 solicitudes mensuales se gestionan de forma artesanal, sin trazabilidad ni priorización. Esta fragmentación no solo genera costos ocultos y errores, sino que limita el crecimiento y la competitividad de la cadena en un mercado cada vez más digitalizado.

@@ -1,0 +1,1 @@
+**Objetivos del Proyecto:** El proyecto busca transformar una operación hotelera manual y fragmentada en un sistema digital integrado que genere valor cuantificable: reducir tiempos, costos y errores mientras mejora la satisfacción del cliente y la disponibilidad de información estratégica en tiempo real.

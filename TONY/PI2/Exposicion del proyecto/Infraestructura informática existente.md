@@ -1,0 +1,1 @@
+**Infraestructura Informática Existente:** La cadena cuenta con una base tecnológica sólida y homogénea que facilita la implementación: stack Microsoft unificado, conectividad VPN establecida y licencias disponibles. Esta infraestructura compatible representa una ventaja estratégica que reduce costos de implementación y acelera la adopción del nuevo sistema.

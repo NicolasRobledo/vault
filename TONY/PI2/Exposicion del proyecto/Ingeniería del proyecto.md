@@ -1,0 +1,2 @@
+
+**Ingeniería del Proyecto:** La metodología Scrum con gestión del cambio no es solo una elección técnica sino estratégica: permite transformar gradualmente una cultura organizacional tradicional mediante entregas frecuentes, feedback constante y transparencia total. El éxito depende tanto de la calidad del código como de la adopción humana del cambio.

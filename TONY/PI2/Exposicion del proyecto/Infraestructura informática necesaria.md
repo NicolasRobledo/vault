@@ -1,0 +1,1 @@
+**Infraestructura Informática Necesaria:** La implementación requiere una evolución controlada de la infraestructura actual, no una revolución. Los upgrades son mínimos y estratégicos: mejor conectividad para aplicaciones en tiempo real, dispositivos móviles para el personal operativo y aprovechamiento máximo del stack tecnológico existente para minimizar costos y riesgos.

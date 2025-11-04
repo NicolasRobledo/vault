@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "a21562365087600f",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a86dcea48d2c74c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e40c7c5c32debe6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025-10-14 Practica.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-10-14 Practica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e1a3c4ed1fd693e3",
+    "type": "split",
+    "children": [
+      {
+        "id": "07fd257fcb500639",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ea6031ae06e98f5b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "27e5cc6aaae95581",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "6db034e117044ea9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "14b60470793e7a45",
+    "type": "split",
+    "children": [
+      {
+        "id": "8ec1d29237d47b92",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23f740996184b834",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Apuntes.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Apuntes"
+            }
+          },
+          {
+            "id": "122981c185c64f6c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Apuntes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Apuntes"
+            }
+          },
+          {
+            "id": "9323bef4d4933987",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "8a1b4a669d11b20a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Apuntes.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de Apuntes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "7e40c7c5c32debe6",
+  "lastOpenFiles": [
+    "PI2 - Exposicion/Exposicion_PI2_Obsidian.md",
+    "PI2 - Exposicion/Proyectos informáticos II-Grupo2-4.pdf",
+    "PI2 - Exposicion",
+    "2025-10-07 Practica.md",
+    "2025-10-28 PRACTICA.md",
+    "Exposicion del proyecto/PRESENTACION DEL PROYECTO.md",
+    "Exposicion del proyecto/Infraestructura informática necesaria.md",
+    "Exposicion del proyecto/Definición del producto a Implementar.md",
+    "Exposicion del proyecto/Necesidades estratégicas de información.md",
+    "Exposicion del proyecto/Infraestructura informática existente.md",
+    "Sistema de información existente.md",
+    "Exposicion del proyecto/Alcance del Proyecto.md",
+    "Exposicion del proyecto/Objetivos del Producto.md",
+    "Exposicion del proyecto/Objetivos del Proyecto.md",
+    "2025-10-14 Practica.md",
+    "Exposicion del proyecto",
+    "Exposicion del proyecto/Ingeniería del proyecto.md",
+    "Proyecto/Proyectos informáticos II-Grupo2-3.pdf",
+    "Proyectos informáticos II-Grupo2-3.pdf",
+    "2025-10-07 TEORIA.md",
+    "30Sep.md",
+    "23Sep.md",
+    "Resumen PI2/Proyectos Informáticos II.md",
+    "Exposicion del proyecto/OBJETIVO DEL PROYECTO.md",
+    "Sin nombre",
+    "Resumen PI2/OBJETIVO DEL PROYECTO**.md",
+    "Resumen PI2",
+    "CONTENIDO Proyectos Informáticos II.md",
+    "Apuntes.md",
+    "Sin título 1.md",
+    "Unidad 1 - Formulacion y Evaluacion de Proyectos.pdf"
+  ]
+}

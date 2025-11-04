@@ -1,0 +1,1 @@
+**Objetivos del Producto:** El sistema no es solo una herramienta tecnológica, sino una plataforma integral que conecta todas las operaciones hoteleras en tiempo real, desde la reserva hasta el check-out, eliminando la fragmentación actual y creando una experiencia unificada para empleados, huéspedes y stakeholders externos.
