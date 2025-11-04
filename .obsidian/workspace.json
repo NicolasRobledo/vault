@@ -4,21 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "dd42fc2fc5ad02c0",
+        "id": "1d8d017455caff9d",
         "type": "tabs",
         "children": [
           {
-            "id": "bb32079604f2ebb9",
+            "id": "d2046d4c5231ab75",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TONY/SIST2-BOBEDA/SIST2-Parcial 3/segunda-clase-peralta-3ertrimestre-robledo.md",
+                "file": "robledo/3erparcial-sistemas2/primera-clase-peralta-3ertrimestre-robledo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "segunda-clase-peralta-3ertrimestre-robledo"
+              "title": "primera-clase-peralta-3ertrimestre-robledo"
+            }
+          },
+          {
+            "id": "800834ebf13a1dc2",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing-Modulo-Monolito.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing-Modulo-Monolito.excalidraw"
             }
           }
         ]
@@ -78,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 287.5
+    "width": 377.5
   },
   "right": {
     "id": "c42e506aca7de907",
@@ -170,53 +182,53 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "bb32079604f2ebb9",
+  "active": "d2046d4c5231ab75",
   "lastOpenFiles": [
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102192853.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102192826.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102191947.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102191932.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102191542.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102190818.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102185529.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102182030.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102175501.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102175445.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes/Pasted image 20251102175425.png",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Imagenes",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Conceptos y Principios del Diseño.md",
+    "robledo/3erparcial-sistemas2/segunda-clase-peralta-3ertrimestre-robledo.md",
+    "Excalidraw/Drawing-Modulo-Monolito.excalidraw.md",
+    "TONY/SIST2/SIST2-Parcial 3/Análisis de Requerimientos.md",
+    "TONY/SIST2/SIST2-Parcial 3/Conceptos y Principios del Diseño.md",
+    "Excalidraw/Drawing-Refinamiento.excalidraw.md",
+    "Excalidraw/Drawing-tipos-planos.excalidraw.md",
     "Excalidraw/Drawing-planos.excalidraw.md",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/segunda-clase-peralta-3ertrimestre-robledo.md",
-    "documentacion/SIST2/Parcial 2/_4_SoftwareClasif.pdf",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/primera-clase-peralta-3ertrimestre-robledo.md",
-    "robledo/Untitled.md",
-    "Excalidraw",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/Análisis de Requerimientos.md",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/24Sep Teoria.md",
-    "TONY/SIST2-BOBEDA/SIST2-Parcial 3/12Sep Teoria.md",
-    "Requerimientos.md",
-    "README.md",
-    "robledo/Informacion_cruda/script-generador-svg.md",
-    "robledo/Informacion_cruda/software-segun-registro.md",
-    "robledo/Informacion_cruda/sofware-segun-utilidad.md",
-    "robledo/Informacion_cruda/evolucion-software.md",
-    "robledo/Informacion_cruda/crisis.md",
-    "robledo/rivera-sistemas-operativos/notas-en clase/3notas-river-fantasma.md",
-    "robledo/rivera-sistemas-operativos/notas-en clase/2notas-river-fantasma.md",
-    "robledo/rivera-sistemas-operativos/notas-en clase/1notas-river-fantasma.md",
-    "robledo/rivera-sistemas-operativos/notas-en clase/1notas-river-fantasma.pdf",
-    "robledo/rivera-sistemas-operativos/notas-en clase/2notas-river-fantasma.pdf",
-    "robledo/rivera-sistemas-operativos/notas-en clase/toPdfViaTempFile23595-1.pdf",
-    "robledo/rivera-sistemas-operativos/notas-en clase/toPdfViaTempFile23595-0.html",
-    "robledo/rivera-sistemas-operativos/notas-en clase/toPdfViaTempFile23322-1.pdf",
-    "robledo/rivera-sistemas-operativos/notas-en clase/toPdfViaTempFile23322-0.html",
-    "robledo/Informacion_cruda/Untitled.md",
-    "robledo/rivera-sistemas-operativos/notas-en clase",
-    "robledo/al2/prueba-links-unificado.md",
-    "robledo/al2/prueba-link.md",
-    "robledo/al2/Ecuacion_Vectorial.md",
-    "robledo/al2/Ecuacion_Simetrica.md",
-    "robledo/al2/Ecuacion_Parametrica.md",
-    "robledo/al2/Rectas-en-R2.md"
+    "robledo/3erparcial-sistemas2/primera-clase-peralta-3ertrimestre-robledo.md",
+    "Excalidraw/Untitled.md",
+    "robledo/3erparcial-sistemas2",
+    "TONY/SIST2/SIST2-Parcial 3/19Sep Teoria.md",
+    "TONY/SIST2/SIST2-Parcial 3/24Oct Teoria.md",
+    "TONY/SIST2/SIST2-Parcial 3/24Sep Teoria.md",
+    "TONY/SIST2/SIST2-Parcial 3/12Sep Teoria.md",
+    "TONY/SIST2/SIST2-Parcial 3/17Oct TEORIA.md",
+    "Lista de Eventos.md",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP15/TP15---Sistemas2",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP15/TP15 Diseño de Interfaz Estático.pdf",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP15/TP15 Diseño de Interfaz Estático .odt",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP15",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP14/TP14 DFDs + DDs + DER + ET Suplementos.pdf",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP14/TP14 DFDs + DDs + DER + ET Suplementos.odt",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP14/EJ2.png",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP14/EJ2.drawio",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP14/EJ1.png",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP14/EJ1.drawio",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP14",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP13/Ejercicio N3.png",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP13/Ejercicio N2.png",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP13/Ejercicio N1.png",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP12/TP12EJ2.png",
+    "TONY/SIST2/Trabajos - 2dosem2025sistII/TP12/TP12EJ1.png",
+    "TONY/SIST2/SIST2-Parcial 3/Imagenes/Pasted image 20251102192853.png",
+    "TONY/SIST2/SIST2-Parcial 3/Imagenes/Pasted image 20251102192826.png",
+    "TONY/SIST2/SIST2-Parcial 3/Imagenes/Pasted image 20251102191947.png",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software en Linea.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software de Utilitarios.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software de Sistemas.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software de IA.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software de Gestión.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software Por Lotes.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software En Tiempo Real.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software Empotrado.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Software Científico.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Momento de Registro.md",
+    "TONY/SIST2/SIST2-Parcial 2/Tipos de Software/Hambito de Aplicación.md"
   ]
 }
