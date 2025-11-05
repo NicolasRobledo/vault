@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SIST2-Parcial 3/Análisis de Requerimientos.md",
+                "file": "SIST2-Parcial 3/Conceptos y Principios del Diseño.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Análisis de Requerimientos"
+              "title": "Conceptos y Principios del Diseño"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -161,20 +161,20 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "bases:Crear nueva base": false
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
     }
   },
   "active": "1c44622d92dbed53",
   "lastOpenFiles": [
-    "SIST2-Parcial 3/24Oct Teoria.md",
-    "SIST2-Parcial 3/Conceptos y Principios del Diseño.md",
     "SIST2-Parcial 3/Análisis de Requerimientos.md",
+    "SIST2-Parcial 3/Conceptos y Principios del Diseño.md",
+    "SIST2-Parcial 3/24Oct Teoria.md",
     "SIST2-Parcial 3/Imagenes/Pasted image 20251102192853.png",
     "SIST2-Parcial 3/Imagenes/Pasted image 20251102192826.png",
     "SIST2-Parcial 3/Imagenes/Pasted image 20251102191947.png",
